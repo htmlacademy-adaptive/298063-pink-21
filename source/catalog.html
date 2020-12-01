@@ -41,10 +41,8 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение Pink</h1>
-
       <section class="photo-section">
-        <h2 class="photo-section__title">Фотографии пользователей</h2>
+        <h1 class="photo-section__title">Фотографии пользователей</h2>
         <p class="photo-section__intro">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
@@ -166,16 +164,16 @@
             Затмите их всех!
             Выкладывайте все, что накопилось в телефоне!
           </p>
-          <div class="photo-filter__upload photo-upload">
-            <input class="photo-upload__input visually-hidden" type="file" name="image-file" id="upload-photo">
-            <label class="photo-upload__label" for="upload-photo">Загрузите изображение</label>
-          </div>
           <div class="photo-filter__settings filter-setup">
             <form action="https://echo.htmlacademy.ru" method="POST">
               <div class="filter-setup__options">
                 <button class="filter-setup__item" aria-label="Обрезать изображение">Обрезать изображение</button>
                 <button class="filter-setup__item" aria-label="Настроить заливку изображения">Настроить заливку изображения</button>
                 <button class="filter-setup__item" aria-label="Настроить контраст изображения">Настроить контраст изображения</button>
+              </div>
+              <div class="photo-filter__upload photo-upload">
+                <input class="photo-upload__input visually-hidden" type="file" name="image-file" id="upload-photo">
+                <label class="photo-upload__label" for="upload-photo">Загрузите изображение</label>
               </div>
               <div class="filter-setup__range range-controls">
                 <div class="range-controls__scale">
