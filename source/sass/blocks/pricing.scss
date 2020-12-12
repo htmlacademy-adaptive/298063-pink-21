@@ -1,0 +1,49 @@
+@import "../sass/variables.scss";
+
+.pricing {
+  background-color: $gray;
+  padding-top: 50px;
+}
+
+.pricing__wrapper {
+  margin: 20px;
+}
+
+// .pricing__toggles
+
+.prices-table {
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 0 0 0 1px;
+  border-collapse: collapse;
+
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 30px;
+
+  margin: auto;
+}
+
+.prices-table__row--header {
+  background-color: $midnight-blue;
+  color: $white;
+}
+
+.prices-table__item {
+  border: 2px solid $light-gray;
+  border-radius: 0 0 0 1px;
+
+  width: 276px;
+  padding-left: 20px;
+}
+
+.prices-table__item--features {
+  background-color: $gray;
+  border-color: $gray;
+  border-bottom: 2px solid $light-gray;
+  font-size: 0;
+}
+
+.prices-table__amount {
+  font-weight: 300;
+}

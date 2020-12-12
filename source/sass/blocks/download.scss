@@ -1,0 +1,62 @@
+@import "../sass/variables.scss";
+
+.download__title {
+  font-weight: 300;
+  font-size: 24px;
+  color: $white;
+  text-align: center;
+
+  width: 280px;
+  margin: auto;
+}
+
+.download__wrapper {
+  background-color: $dark-blue;
+  color: $white;
+  min-height: 271px;
+  padding-top: 28px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download__link {
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  border: 3px solid $white;
+  border-radius: 29px;
+
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 38px;
+  padding-right: 39px;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: lighten($pink, 30%);
+  }
+}
+
+.download__icons {
+  @include list-style;
+  margin-top: 38px;
+}
+
+.download__info {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 280px;
+  margin: auto;
+}

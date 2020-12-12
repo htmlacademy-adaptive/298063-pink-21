@@ -1,0 +1,33 @@
+@import "../sass/variables.scss";
+
+@media (max-width: $mobile-width-only) {
+  .impact {
+    display: none;
+  }
+}
+
+.impact {
+  background-color: $white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.impact__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.impact__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.impact__text {
+  width: 300px;
+  color: $midnight-blue;
+}
+
+.impact__link {
+  color: $pink;
+  text-decoration: underline;
+}

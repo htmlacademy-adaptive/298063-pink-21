@@ -1,0 +1,64 @@
+@import "../sass/variables.scss";
+
+// .contacts
+
+.contacts__wrapper {
+  margin: 0 auto;
+}
+
+.contacts__title {
+  color: $midnight-blue;
+  font-size: 24px;
+  font-weight: 300;
+
+  width: 222px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.contacts__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 41px;
+  }
+}
+
+.contacts__item {
+  display: block;
+
+  color: $pink;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+
+  margin-top: 13px;
+
+  &:hover {
+    color: $midnight-blue;
+    text-decoration-line: underline;
+    text-decoration-color: $midnight-blue;
+  }
+
+  &:active {
+    color: lighten($midnight-blue, 30%);
+    text-decoration: none;
+  }
+}
+
+.contacts__item--inactive {
+  &:hover,
+  &:active {
+    color: $pink;
+    text-decoration: none;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  min-height: 200px;
+}

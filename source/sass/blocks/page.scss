@@ -1,0 +1,16 @@
+@import "../sass/variables.scss";
+
+body {
+  @include font-type;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
