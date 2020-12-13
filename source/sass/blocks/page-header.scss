@@ -1,0 +1,21 @@
+@import "../sass/variables.scss";
+
+.page-header__title {
+  color: $white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 80px;
+
+  background-color: $dark-blue;
+}
+
+.page-header__title--form {
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,19 @@
+@import "../sass/variables.scss";
+
+.competition__intro {
+  font-size: 14px;
+  line-height: 30px;
+  color: $midnight-blue;
+  text-align: center;
+
+  width: 280px;
+  margin: auto;
+  margin-top: 54px;
+  margin-bottom: 55px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .competition__intro--hidden {
+    display: none;
+  }
+}

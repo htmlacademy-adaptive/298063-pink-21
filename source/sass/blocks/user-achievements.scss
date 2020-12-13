@@ -1,0 +1,26 @@
+@import "../sass/variables.scss";
+
+.user-achievements {
+  background-color: $gray;
+  margin-bottom: 42px;
+  padding-top: 42px;
+}
+
+.user-achievements__list {
+  @include list-style;
+  margin: 0;
+}
+
+.user-achievements__option {
+  margin-bottom: 47px;
+}
+
+.user-achievements__fill {
+  margin-right: 22px;
+}
+
+.user-achievements__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $midnight-blue;
+}

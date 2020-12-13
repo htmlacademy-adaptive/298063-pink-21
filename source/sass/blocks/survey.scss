@@ -1,0 +1,102 @@
+@import "../sass/variables.scss";
+
+.survey__section {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.survey__section--submit {
+  padding-left: 22px;
+  padding-right: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.survey__subtitle {
+  display: block;
+
+  color: $pink;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.survey__subtitle--hidden {
+  @media (max-width: $mobile-width-only) {
+    @include visually-hidden;
+  }
+}
+
+.survey__input {
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $midnight-blue;
+  }
+
+  &:focus {
+    outline-color: $pink;
+  }
+}
+
+.survey__input::placeholder {
+  color: $midnight-blue;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.survey__submit {
+  width: 276px;
+  height: 59px;
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+
+  color: $white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-top: 52px;
+  margin-bottom: 46px;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: $dark-green;
+    border-color: $dark-green;
+  }
+
+  &:active {
+    color: $transparent-white;
+  }
+}
+
+.survey__legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-left: 22px;
+}
+
+.survey__legend--coloured {
+  color: $pink;
+}

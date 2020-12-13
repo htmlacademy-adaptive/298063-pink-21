@@ -1,0 +1,26 @@
+@import "../sass/variables.scss";
+
+.user-emotions {
+  padding-right: 22px;
+}
+
+.user-emotions__fill {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 197px;
+  margin-top: 22px;
+  padding-top: 22px;
+  padding-right: 25px;
+  padding-left: 20px;
+
+  resize: none;
+
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: $midnight-blue;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
