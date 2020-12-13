@@ -1,0 +1,23 @@
+@import "../sass/variables.scss";
+
+// .photo-filter
+
+.photo-filter__wrapper {
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+.photo-filter__intro {
+  background-color: $white;
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 52px;
+}

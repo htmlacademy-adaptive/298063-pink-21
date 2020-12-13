@@ -1,0 +1,29 @@
+@import "../sass/variables.scss";
+
+.user-post__container {
+  background-color: $gray;
+
+  padding: 25px 30px 23px 27px;
+  margin: 0;
+  margin-top: -7px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-post__comment {
+  margin: 0;
+}
+
+.user-post__time {
+  color: $midnight-blue;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user-post__image {
+  width: 280px;
+  height: 180px;
+}

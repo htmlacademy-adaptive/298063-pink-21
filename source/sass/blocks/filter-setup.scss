@@ -1,0 +1,24 @@
+@import "../sass/variables.scss";
+
+.filter-setup {
+  background-color: $light-gray;
+}
+
+.filter-setup__options {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-setup__item {
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  margin-right: 35px;
+  box-sizing: border-box;
+}

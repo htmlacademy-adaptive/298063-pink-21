@@ -1,0 +1,11 @@
+@import "../sass/variables.scss";
+
+.user-photo {
+  @include list-style;
+  line-height: 24px;
+}
+
+.user-photo__item {
+  margin-right: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,55 @@
+@import "../sass/variables.scss";
+
+.photo-submit {
+  width: 280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+}
+
+.photo-submit__button {
+  border: 3px solid;
+  border-radius: 30px;
+  box-sizing: border-box;
+
+  width: 280px;
+  min-height: 55px;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.photo-submit__button--post {
+  border-color: $pink;
+  color: $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: lighten($pink, 30%);
+  }
+}
+
+.photo-submit__button--cancel {
+  border-color: $midnight-blue;
+  color: $midnight-blue;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $midnight-blue;
+    color: $white;
+  }
+}
