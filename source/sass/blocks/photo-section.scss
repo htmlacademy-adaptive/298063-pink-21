@@ -1,0 +1,20 @@
+@import "../sass/variables.scss";
+
+.photo-section {
+  background-color: $white;
+  font-size: 14px;
+}
+
+.photo-section__intro {
+  width: 252px;
+  margin: auto;
+  margin-top: 54px;
+  margin-bottom: 60px;
+
+  display: flex;
+  box-sizing: border-box;
+
+  color: $midnight-blue;
+  line-height: 30px;
+  text-align: center;
+}
