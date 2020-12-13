@@ -7,6 +7,9 @@ $midnight-blue: #283645;
 $gray: #f2f2f2;
 $light-gray: #e5e5e5;
 $pink: #d22856;
+$green: #2aab6d;
+$dark-green: #1c9b5e;
+$transparent-white: rgba(255, 255, 255, 0.3);
 
 // Viewports
 
@@ -34,4 +37,18 @@ $mobile-width-only: 659px;
 @mixin list-style {
   padding: 0;
   list-style: none;
+}
+
+@mixin form-label {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin input-text {
+  color: $midnight-blue;
+  font-size: 18px;
+  line-height: 30px;
 }

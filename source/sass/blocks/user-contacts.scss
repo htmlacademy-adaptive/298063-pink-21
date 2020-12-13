@@ -1,0 +1,39 @@
+@import "../sass/variables.scss";
+
+.user-contacts {
+  padding-bottom: 15px;
+  padding-top: 42px;
+}
+
+.user-contacts__item {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.user-contacts__label {
+  @include form-label;
+  margin-left: 21px;
+}
+
+.user-contacts__fill {
+  width: 93%;
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $midnight-blue;
+  }
+
+  &:focus {
+    outline-color: $pink;
+  }
+}
+
+.user-contacts__fill::placeholder {
+  color: $midnight-blue;
+}
