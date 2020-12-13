@@ -1,0 +1,56 @@
+@import "../sass/variables.scss";
+
+.advantages {
+  background-color: $gray;
+}
+
+.advantages__title {
+  background-color: $white;
+  font-size: 24px;
+  font-weight: 300;
+  color: $midnight-blue;
+
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 70px;
+}
+
+.advantages__title--bottom {
+  display: block;
+  margin-top: 20px;
+}
+
+.advantanges__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $gray;
+}
+
+.advantages__list {
+  @include list-style;
+  background-color: $gray;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  text-align: center;
+}
+
+.advantages__item {
+  width: 280px;
+}
+
+.advantages__subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__description {
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 24px;
+}

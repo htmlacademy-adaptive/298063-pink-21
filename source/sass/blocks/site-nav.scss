@@ -1,0 +1,33 @@
+@import "../sass/variables.scss";
+
+.site-nav {
+  @include list-style;
+  background-color: $midnight-blue;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.site-nav__item {
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.site-nav__link {
+  color: $white;
+  margin: auto;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../sass/variables.scss";
+
+.system-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.system-list_item {
+  padding-right: 35px;
+}

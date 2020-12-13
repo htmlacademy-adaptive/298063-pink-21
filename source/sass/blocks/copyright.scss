@@ -1,0 +1,24 @@
+@import "../sass/variables.scss";
+
+.copyright {
+  display: flex;
+}
+
+.copyright__info {
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-right: 15px;
+}
+
+.copyright__link {
+  color: $black;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+}

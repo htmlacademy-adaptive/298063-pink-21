@@ -1,0 +1,37 @@
+// Colors
+$header-transparent-color: rgba(0, 0, 0, 0.3);
+$white: #ffffff;
+$black: #000000;
+$dark-blue: #1d2631;
+$midnight-blue: #283645;
+$gray: #f2f2f2;
+$light-gray: #e5e5e5;
+$pink: #d22856;
+
+// Viewports
+
+$tablet-width: 660px;
+$desktop-width: 960px;
+$mobile-width-only: 659px;
+
+// Mixins
+
+@mixin font-type {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@mixin visually-hidden {
+  border: 0;
+  clip-path: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin list-style {
+  padding: 0;
+  list-style: none;
+}
