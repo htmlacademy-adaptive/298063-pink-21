@@ -1,20 +1,56 @@
 @import "../sass/variables.scss";
 
-// .contacts
+.contacts {
+  margin: 0;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
 
 .contacts__wrapper {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    text-align: center;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts__title {
   color: $midnight-blue;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 
   width: 222px;
   margin: 0 auto;
-  margin-top: 50px;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 61px;
+  }
 }
 
 .contacts__text {
@@ -25,6 +61,35 @@
 
   &:last-child {
     margin-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    display: inline-block;
+
+    .contacts__text:last-child {
+      width: 320px;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 35px;
+    flex-basis: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text--call {
+    order: 1;
+  }
+
+  .contacts__text--write {
+    order: 3;
+  }
+
+  .contacts__text--visit {
+    order: 2;
   }
 }
 
@@ -61,4 +126,5 @@
 .contacts__map {
   width: 100%;
   min-height: 200px;
+  margin: auto;
 }

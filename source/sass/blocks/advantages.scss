@@ -1,56 +1,123 @@
 @import "../sass/variables.scss";
 
-.advantages {
-  background-color: $gray;
-}
+// .advantages
 
 .advantages__title {
   background-color: $white;
   font-size: 24px;
   font-weight: 300;
   color: $midnight-blue;
+  text-align: center;
 
+  width: 280px;
   margin: 0 auto;
   margin-top: 46px;
   margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 588px;
+    margin: auto;
+    margin-top: 58px;
+    margin-bottom: 25px;
+  }
 }
 
 .advantages__title--bottom {
   display: block;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .advantanges__wrapper {
+  background-color: $gray;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-color: $gray;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+    padding-top: 360px;
+  }
 }
 
 .advantages__list {
   @include list-style;
   background-color: $gray;
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-
+  margin-top: 53px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
   width: 280px;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+
+    width: 252px;
+    margin-left: 68px;
+  }
+}
+
+.advantages__item--mood {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .advantages__subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description {
   color: $midnight-blue;
   font-size: 14px;
   line-height: 24px;
+
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
 }

@@ -1,30 +1,74 @@
 @import "../sass/variables.scss";
 
+// Не отображается на мобилках
+
 @media (max-width: $mobile-width-only) {
   .impact {
     display: none;
   }
 }
 
+// На планшете и десктопе
+
 .impact {
   background-color: $white;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .impact__wrapper {
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-top: 95px;
+    padding-bottom: 100px;
+    padding-left: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding-top: 128px;
+    padding-bottom: 120px;
+    padding-left: 350px;
+  }
 }
 
 .impact__title {
   font-size: 30px;
   line-height: 36px;
+
+  width: 170px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    min-width: 300px;
+  }
 }
 
 .impact__text {
-  width: 300px;
+  width: 310px;
   color: $midnight-blue;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 534px;
+    color: $midnight-blue;
+
+    margin-top: 37px;
+    margin-bottom: 47px;
+  }
 }
 
 .impact__link {
