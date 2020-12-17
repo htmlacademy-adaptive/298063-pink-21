@@ -3,16 +3,59 @@
 .user-contacts {
   padding-bottom: 15px;
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    padding-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-top: 44px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.user-contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .user-contacts__item {
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 375px;
+    margin-bottom: 22px;
+  }
 }
 
 .user-contacts__label {
   @include form-label;
   margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+  }
 }
 
 .user-contacts__fill {

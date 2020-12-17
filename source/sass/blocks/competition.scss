@@ -1,5 +1,6 @@
 @import "../sass/variables.scss";
 
+
 .competition__intro {
   font-size: 14px;
   line-height: 30px;
@@ -10,6 +11,17 @@
   margin: auto;
   margin-top: 54px;
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 490px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+    margin-bottom: 89px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -17,3 +29,5 @@
     display: none;
   }
 }
+
+// .competition_form
