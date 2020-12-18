@@ -441,24 +441,6 @@
   border: none;
   color: #000000; }
 
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"); }
-
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
-
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
-
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
@@ -667,7 +649,7 @@ a {
       margin-bottom: 89px; } }
 
 @media (max-width: 659px) {
-  .competition__intro--hidden {
+  .competition__intro-hidden {
     display: none; } }
 
 .page-header__title {
@@ -727,19 +709,19 @@ a {
       margin-bottom: 70px;
       padding-left: 60px; } }
 
-.survey__section--submit {
+.survey__section-submit {
   padding-left: 22px;
   padding-right: 22px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   @media (min-width: 660px) {
-    .survey__section--submit {
+    .survey__section-submit {
       order: 6;
       flex-direction: row;
       justify-content: space-between; } }
   @media (min-width: 960px) {
-    .survey__section--submit {
+    .survey__section-submit {
       width: 98%;
       display: flex;
       justify-content: space-between;
@@ -817,7 +799,7 @@ a {
   margin: 0;
   margin-left: 22px; }
 
-.survey__legend--coloured {
+.survey__legend-coloured {
   color: #d22856; }
 
 @media (min-width: 960px) {
