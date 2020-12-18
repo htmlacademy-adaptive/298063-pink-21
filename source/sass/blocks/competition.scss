@@ -1,5 +1,3 @@
-@import "../sass/variables.scss";
-
 
 .competition__intro {
   font-size: 14px;
@@ -25,7 +23,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .competition__intro--hidden {
+  .competition__intro-hidden {
     display: none;
   }
 }
