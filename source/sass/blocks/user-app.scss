@@ -1,7 +1,18 @@
-@import "../sass/variables.scss";
 
 .user-app {
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+    margin: 0;
+    margin-left: 7px;
+    height: 297px;
+  }
 }
 
 .user-app__list {

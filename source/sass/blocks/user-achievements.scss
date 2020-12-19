@@ -1,14 +1,32 @@
-@import "../sass/variables.scss";
 
 .user-achievements {
   background-color: $gray;
   margin-bottom: 42px;
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 59px;
+  }
 }
 
 .user-achievements__list {
   @include list-style;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .user-achievements__option {
