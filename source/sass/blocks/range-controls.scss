@@ -1,0 +1,46 @@
+
+.range-controls {
+  position: relative;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.range-controls--active {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: absolute;
+    bottom: 38px;
+    z-index: 50;
+  }
+}
+
+.range-controls__bar {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background: $midnight-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.range-controls__toggle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid $pink;
+  background-color: $gray;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: -7px;
+  right: 42px;
+}

@@ -1,10 +1,21 @@
 
 .photo-submit {
   width: 280px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 38px;
+  // padding-top: 38px;
+
+  // @media (min-width: $tablet-width) {
+  //   width: 260px;
+  //   padding: 0;
+  //   margin: 0;
+  // }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .photo-submit__button {
@@ -22,6 +33,14 @@
 
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .photo-submit__button--post {
@@ -35,6 +54,10 @@
 
   &:active {
     color: lighten($pink, 30%);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 44px;
   }
 }
 

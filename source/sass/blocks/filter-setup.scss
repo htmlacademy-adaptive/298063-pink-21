@@ -1,6 +1,17 @@
 
 .filter-setup {
-  background-color: $light-gray;
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .filter-setup__options {
@@ -11,6 +22,24 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.filter-setup__wrapper {
+  @media (max-width: $mobile-width-only) {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 75px;
+  }
 }
 
 .filter-setup__item {
@@ -20,4 +49,93 @@
 
   margin-right: 35px;
   box-sizing: border-box;
+}
+
+.filter-setup__option {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 275px;
+    border-bottom: 1px solid $transparent-blue;
+
+    padding-top: 27px;
+    padding-right: 18px;
+    padding-bottom: 23px;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+}
+
+
+.filter-setup__item svg {
+  fill: #b5b9be;
+}
+
+.filter-setup__item--crop svg {
+  width: 44px;
+  height: 44px;
+  fill: $pink;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.filter-setup__item--fill svg {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.filter-setup__item--contrast svg {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filter-setup__range {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-setup__range {
+    text-align: center;
+  }
+}
+
+.filter-setup__results {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 67px;
+  }
 }
