@@ -38,9 +38,9 @@
   border-radius: 50%;
   border: 2px solid $pink;
   background-color: $gray;
-  box-sizing: border-box;
 
   position: absolute;
-  top: -7px;
+  top: 0;
   right: 42px;
+  transform: translateY(-50%);
 }
