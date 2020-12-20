@@ -462,6 +462,9 @@ a {
   position: absolute;
   width: 1px; }
 
+* {
+  box-sizing: border-box; }
+
 .site-nav {
   padding: 0;
   list-style: none;
@@ -1083,7 +1086,8 @@ a {
 
 .photo-section__list {
   margin-right: 20px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-top: 0; }
   @media (min-width: 660px) {
     .photo-section__list {
       width: 620px;
@@ -1466,9 +1470,13 @@ a {
   border-radius: 50%;
   border: 2px solid #d22856;
   background-color: #f2f2f2;
-  box-sizing: border-box;
   position: absolute;
-  top: -7px;
-  right: 42px; }
+  top: 0;
+  right: 42px;
+  transform: translateY(-50%); }
+
+.photo-highlight__image {
+  width: 100%;
+  margin-bottom: -2px; }
 
 /*# sourceMappingURL=style.css.map */
