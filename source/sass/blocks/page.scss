@@ -1,5 +1,4 @@
 // @import "../fonts.scss";
-// @import "../sass/variables.scss";
 
 body {
   @include font-type;
@@ -15,4 +14,8 @@ a {
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -10,39 +10,42 @@
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
-      </a>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+        <div class="main-nav__container">
+          <a class="page-header__logo">
+            <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк" width="74" height="23">
+          </a>
+
+
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
-      <h1 class="page-header__title">Фотографии <br> пользователей</h2>
+      <h1 class="page-header__title page-header__title--catalog">Фотографии <br> пользователей</h2>
 
     </header>
 
@@ -52,11 +55,13 @@
         <p class="photo-section__intro">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
+        <div class="photo-highlight">
+          <a href="">
+            <img class="photo-highlight__image" src="img/panorama-mobile@1x.jpg" alt="Подвесной мост">
+          </a>
+        </div>
         <ul class="photo-section__list user-photo">
-          <li class="user-photo__item user-post user-post--highlight">
-            <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Подвесной мост">
-            </a>
+          <li class="user-photo__item user-photo__item--panorama user-post">
             <div class="user-post__container">
               <p class="user-post__comment">
                 <strong>Анна</strong> <span class="user-post__time">(5 минут назад)</span> <br>
@@ -72,7 +77,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Автомобиль белого цвета на фоне серой стены">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль белого цвета на фоне серой стены">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -87,7 +92,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Барабанная установка">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -102,7 +107,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Стеклянный потолок">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Стеклянный потолок">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -117,7 +122,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Ярмарка фруктов - Кубанская бахча">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка фруктов - Кубанская бахча">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -132,7 +137,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Фотография склона">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография склона">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -147,7 +152,7 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="https://via.placeholder.com/150x150" alt="Фотография склона">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета на фоне заката">
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -164,36 +169,66 @@
       </section>
 
       <section class="photo-filter">
-        <div class="photo-filter__wrapper">
           <h2 class="visually-hidden">Фильтр для фотографий</h2>
           <p class="photo-filter__intro">
             Затмите их всех! <br>
             Выкладывайте все, что накопилось в телефоне!
           </p>
-          <div class="photo-filter__settings filter-setup">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-              <div class="filter-setup__options">
-                <button class="filter-setup__item" aria-label="Обрезать изображение">Обрезать изображение</button>
-                <button class="filter-setup__item" aria-label="Настроить заливку изображения">Настроить заливку изображения</button>
-                <button class="filter-setup__item" aria-label="Настроить контраст изображения">Настроить контраст изображения</button>
-              </div>
+          <div class="photo-filter__wrapper">
+            <form class="photo-filter__form" action="https://echo.htmlacademy.ru" method="POST">
               <div class="photo-filter__upload photo-upload">
                 <input class="photo-upload__input visually-hidden" type="file" name="image-file" id="upload-photo">
-                <label class="photo-upload__label" for="upload-photo">Загрузите изображение</label>
+                <label class="photo-upload__label" for="upload-photo" aria-label="Загрузите изображение"></label>
               </div>
-              <div class="filter-setup__range range-controls">
-                <div class="range-controls__scale">
-                  <div class="range-controls__bar"></div>
+              <div class="photo-filter__settings filter-setup">
+                <div class="filter-setup__options">
+                  <div class="filter-setup__wrapper">
+                    <div class="filter-setup__option">
+                      <button class="filter-setup__item filter-setup__item--crop" aria-label="Обрезать изображение">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                          <path fill="none" d="M0,0h48v48H0V0z"/>
+                          <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                        </svg>
+                      </button>
+                      <div class="range-controls range-controls--active">
+                        <div class="range-controls__bar"></div>
+                        <div class="range-controls__toggle"></div>
+                      </div>
+                    </div>
+                    <div class="filter-setup__option">
+                      <button class="filter-setup__item filter-setup__item--fill" aria-label="Настроить заливку изображения">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                          <path fill="none" d="M0,0h48v48H0V0z"/>
+                          <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                          <rect y="40" width="48" height="3"/>
+                        </svg>
+                      </button>
+                      <div class="range-controls">
+                        <div class="range-controls__bar"></div>
+                        <div class="range-controls__toggle"></div>
+                      </div>
+                    </div>
+                    <div class="filter-setup__option">
+                      <button class="filter-setup__item filter-setup__item--contrast" aria-label="Настроить контраст изображения">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                          <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                          <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                        </svg>
+                      </button>
+                      <div class="range-controls">
+                        <div class="range-controls__bar"></div>
+                        <div class="range-controls__toggle"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="range-controls__toggle"></div>
+                <p class="filter-setup__results photo-submit">
+                  <button class="photo-submit__button photo-submit__button--post" type="submit">Запостить</button>
+                  <button class="photo-submit__button photo-submit__button--cancel">Отмена</button>
+                </p>
               </div>
-              <p class="filter-setup__results photo-submit">
-                <button class="photo-submit__button photo-submit__button--post" type="submit">Запостить</button>
-                <button class="photo-submit__button photo-submit__button--cancel">Отмена</button>
-              </p>
             </form>
           </div>
-        </div>
       </section>
 
     </main>
