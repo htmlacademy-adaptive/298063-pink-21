@@ -2,11 +2,12 @@
 .system-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
-.system-list_item {
+.system-list__item {
   padding-right: 35px;
   width: 47px;
   height: 56px;
+  margin-right: 35px;
 }

@@ -124,6 +124,19 @@
 
 .contacts__map {
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
 }
