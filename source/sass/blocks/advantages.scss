@@ -8,10 +8,12 @@
   color: $midnight-blue;
   text-align: center;
 
+  position: relative;
+
   width: 280px;
   margin: 0 auto;
   margin-top: 46px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 588px;
@@ -40,6 +42,7 @@
   }
 }
 
+
 .advantanges__wrapper {
   background-color: $gray;
 
@@ -52,6 +55,7 @@
   padding-right: 20px;
 
   overflow: hidden;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -62,6 +66,17 @@
     display: block;
     padding: 0;
   }
+}
+
+.advantanges__wrapper::before {
+  content: "";
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -58px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .advantages__gallery {
@@ -110,7 +125,7 @@
   @include list-style;
   background-color: $gray;
   margin: 0;
-  margin-top: 53px;
+  margin-top: 74px;
   text-align: center;
 
   // padding-bottom: 325px;

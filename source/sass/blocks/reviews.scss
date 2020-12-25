@@ -1,7 +1,11 @@
 
 .reviews {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 193px;
