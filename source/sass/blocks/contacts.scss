@@ -60,9 +60,9 @@
   font-weight: bold;
   text-align: center;
 
-  &:last-child {
-    margin-bottom: 41px;
-  }
+  // &:last-child {
+  //   margin-bottom: 41px;
+  // }
 
   @media (min-width: $tablet-width) {
     width: 45%;
@@ -91,7 +91,7 @@
 
   .contacts__text--visit {
     padding-top: 6px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -150,7 +150,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    height: 374px;
+    height: 377px;
   }
 
   @media (min-width: $desktop-width) {
