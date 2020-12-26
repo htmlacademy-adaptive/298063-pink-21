@@ -4,7 +4,7 @@
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +18,7 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +42,8 @@
     width: 370px;
     font-size: 40px;
     line-height: 54px;
+
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +80,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__text--call {
+    padding-right: 35px;
+  }
+
+  .contacts__text--write {
+    padding-left: 37px;
+  }
+
+  .contacts__text--visit {
+    padding-top: 6px;
+    margin-bottom: 23px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts__text--call {
     order: 1;
@@ -109,6 +126,10 @@
   &:active {
     color: lighten($midnight-blue, 30%);
     text-decoration: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
   }
 }
 

@@ -10,6 +10,11 @@
   padding-bottom: 18px;
   margin: 0;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    padding-top: 43px;
+  }
 }
 
 .page-header__title {

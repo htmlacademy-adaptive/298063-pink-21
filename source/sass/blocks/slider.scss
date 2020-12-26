@@ -6,6 +6,10 @@
   margin: 0 auto;
   margin-top: 31px;
   padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+  }
 }
 
 .slider__toggle {
