@@ -3,7 +3,7 @@
   background-color: $dark-blue;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 60%;
+  background-size: 100% 63%;
 
   padding-top: 66px;
 
@@ -24,7 +24,8 @@
   text-align: center;
 
   width: 280px;
-  margin-bottom: 330px;
+  margin-bottom: 341px;
+  margin-top: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -68,7 +69,7 @@
   height: 286px;
 
   position: absolute;
-  transform: translateY(34%);
+  transform: translateY(38%);
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -101,7 +102,7 @@
 
   box-sizing: border-box;
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 
   width: 280px;
   display: flex;
@@ -123,7 +124,8 @@
 
 .download__icons {
   @include list-style;
-  margin-top: 38px;
+  margin-top: 30px;
+  margin-bottom: 11px;
 }
 
 .download__info {
@@ -134,7 +136,7 @@
 
   width: 280px;
   margin: auto;
-  margin-bottom: 38px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
