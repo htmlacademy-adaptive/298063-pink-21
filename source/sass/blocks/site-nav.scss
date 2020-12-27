@@ -19,6 +19,10 @@
     line-height: 18px;
     font-weight: 400;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .site-nav__item {
@@ -34,10 +38,6 @@
 
     padding-bottom: 19px;
     margin-left: 79px;
-
-    &--active {
-      border-bottom: 2px solid $white;
-    }
   }
 }
 

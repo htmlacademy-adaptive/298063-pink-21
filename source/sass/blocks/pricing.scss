@@ -25,6 +25,11 @@
   @media (min-width: $tablet-width) {
     top: -42px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -11px;
+    background-size: 115%;
+  }
 }
 
 .pricing__wrapper {
