@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 .slider__toggles {
   display: flex;
 
@@ -30,4 +34,34 @@
 
 .slider__toggle:last-child {
   margin: 0;
+}
+
+.slider__buttons {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__button {
+  width: 22px;
+  height: 41px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  position: absolute;
+  top: 29px;
+}
+
+.slider__button--previous {
+  left: -8px;
+}
+
+.slider__button--next {
+  right: 8px;
 }

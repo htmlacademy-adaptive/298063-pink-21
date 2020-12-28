@@ -62,7 +62,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -85,7 +84,6 @@
 }
 
 .main-nav__wrapper {
-
   @media (min-width: $desktop-width) {
     width: 700px;
     padding-top: 48px;

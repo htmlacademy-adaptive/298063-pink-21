@@ -5,7 +5,11 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 0;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
   }
 }
 
@@ -46,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/logo-pink-blue-desktop.svg");
+    margin-right: 14px;
   }
 }
 
