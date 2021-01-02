@@ -32,6 +32,7 @@
 .survey__section-submit {
   padding-left: 22px;
   padding-right: 22px;
+  margin-top: 47px;
 
   display: flex;
   flex-direction: column;
@@ -99,8 +100,8 @@
 }
 
 .survey__submit {
-  width: 276px;
-  height: 59px;
+  width: 278px;
+  height: 62px;
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
@@ -112,8 +113,7 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  margin-top: 52px;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
 
   cursor: pointer;
   outline: none;
@@ -134,7 +134,6 @@
   text-transform: uppercase;
 
   margin: 0;
-  margin-left: 22px;
 }
 
 .survey__legend-coloured {

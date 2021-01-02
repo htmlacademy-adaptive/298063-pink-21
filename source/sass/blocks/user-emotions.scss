@@ -1,5 +1,6 @@
 
 .user-emotions {
+  padding-top: 53px;
   padding-right: 22px;
 
   @media (min-width: $tablet-width) {
@@ -21,17 +22,20 @@
 .user-emotions__fill {
   width: 100%;
   box-sizing: border-box;
-  min-height: 197px;
+  min-height: 200px;
   margin-top: 22px;
-  padding-top: 22px;
-  padding-right: 25px;
-  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 19px;
+
+  border: 2px solid $light-gray;
 
   resize: none;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     color: $midnight-blue;
+    opacity: 1;
 
     font-weight: 400;
     font-size: 18px;
