@@ -25,6 +25,15 @@
   cursor: pointer;
 
   margin-right: 16px;
+
+  &:hover {
+    background-color: $midnight-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__toggle--current {
@@ -50,12 +59,21 @@
 
   background-color: transparent;
   background-repeat: no-repeat;
+  opacity: 0.3;
   border: 0;
   outline: 0;
   cursor: pointer;
 
   position: absolute;
   top: 29px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__button--previous {

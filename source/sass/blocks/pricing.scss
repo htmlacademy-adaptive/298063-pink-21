@@ -8,10 +8,12 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 154px;
+    padding-top: 102px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 154px;
     padding-bottom: 95px;
   }
 }
@@ -47,7 +49,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,7 +107,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-left: 11px;
+    padding-left: 15px;
     padding-top: 7px;
     padding-bottom: 8px;
     padding-right: 12px;
@@ -133,8 +136,8 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 8px;
-    padding-top: 7px;
-    padding-left: 11px;
+    padding-top: 14px;
+    padding-left: 13px;
     padding-right: 12px;
   }
 
@@ -174,7 +177,7 @@
 
   @media (min-width: $tablet-width) {
     height: 20px;
-    top: 13px;
+    top: 14px;
     left: -46px;
 
     font-size: 14px;
@@ -193,6 +196,10 @@
 
   display: block;
   margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
@@ -216,13 +223,13 @@
   }
 }
 
-.prices-table__item--text {
+.prices-table__item-text {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.prices-table__item--yes {
+.prices-table__item-yes {
   display: block;
   background-image: url("../../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -237,7 +244,7 @@
   }
 }
 
-.prices-table__item--no {
+.prices-table__item-no {
   display: block;
   background-image: url("../../img/icon-no.svg");
   background-repeat: no-repeat;

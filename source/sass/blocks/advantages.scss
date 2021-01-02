@@ -1,6 +1,8 @@
 
 .advantages {
-  padding-top: 63px;
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
 }
 
 .advantages__title {
@@ -234,5 +236,17 @@
     margin-top: 22px;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

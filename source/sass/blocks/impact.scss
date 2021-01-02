@@ -92,4 +92,13 @@
 .impact__link {
   color: $pink;
   text-decoration: underline;
+
+  &:hover {
+    color: $midnight-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }

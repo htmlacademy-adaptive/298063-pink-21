@@ -84,10 +84,15 @@
 }
 
 .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 700px;
     padding-top: 48px;
     padding-bottom: 34px;
+    margin: 0;
   }
 }
 
@@ -104,6 +109,17 @@
 }
 
 .main-nav--opened {
-  position: static;
+  position: absolute;
   margin-bottom: -60px;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -110px;
+  }
+}
+
+.main-nav--opened .main-nav__container {
+  @media (min-width: $tablet-width) {
+    background-color: $midnight-blue;
+  }
 }
