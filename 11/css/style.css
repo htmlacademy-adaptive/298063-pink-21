@@ -154,8 +154,9 @@
       margin-top: 28px;
       padding-bottom: 43px; } }
 
-.advantages {
-  padding-top: 63px; }
+@media (min-width: 960px) {
+  .advantages {
+    padding-top: 63px; } }
 
 .advantages__title {
   background-color: #ffffff;
@@ -339,6 +340,15 @@
       font-size: 18px;
       line-height: 30px; } }
 
+.advantages__description br {
+  display: none; }
+  @media (min-width: 660px) {
+    .advantages__description br {
+      display: block; } }
+  @media (min-width: 960px) {
+    .advantages__description br {
+      display: none; } }
+
 .reviews {
   padding-top: 41px;
   padding-bottom: 20px; }
@@ -425,9 +435,11 @@
   position: relative; }
   @media (min-width: 660px) {
     .pricing {
-      padding-top: 154px; } }
+      padding-top: 102px;
+      padding-bottom: 67px; } }
   @media (min-width: 960px) {
     .pricing {
+      padding-top: 154px;
       padding-bottom: 95px; } }
 
 .pricing::before {
@@ -457,7 +469,8 @@
       align-items: center; } }
   @media (min-width: 660px) {
     .pricing__wrapper {
-      margin-bottom: 28px; } }
+      width: 620px;
+      margin: 0 auto; } }
   @media (min-width: 960px) {
     .pricing__wrapper {
       width: 940px;
@@ -502,7 +515,7 @@
   text-transform: uppercase; }
   @media (min-width: 660px) {
     .prices-table__item {
-      padding-left: 11px;
+      padding-left: 15px;
       padding-top: 7px;
       padding-bottom: 8px;
       padding-right: 12px;
@@ -525,8 +538,8 @@
   @media (min-width: 660px) {
     .prices-table__row--header .prices-table__item {
       padding-bottom: 8px;
-      padding-top: 7px;
-      padding-left: 11px;
+      padding-top: 14px;
+      padding-left: 13px;
       padding-right: 12px; } }
   @media (min-width: 960px) {
     .prices-table__row--header .prices-table__item {
@@ -558,7 +571,7 @@
   @media (min-width: 660px) {
     .prices-table__label {
       height: 20px;
-      top: 13px;
+      top: 14px;
       left: -46px;
       font-size: 14px; } }
   @media (min-width: 960px) {
@@ -572,6 +585,9 @@
   font-weight: 300;
   display: block;
   margin-top: -4px; }
+  @media (min-width: 660px) {
+    .prices-table__amount {
+      font-size: 18px; } }
   @media (min-width: 960px) {
     .prices-table__amount {
       margin-top: 0;
@@ -590,10 +606,10 @@
       justify-content: center; } }
 
 @media (min-width: 660px) {
-  .prices-table__item--text {
+  .prices-table__item-text {
     display: none; } }
 
-.prices-table__item--yes {
+.prices-table__item-yes {
   display: block;
   background-image: url("../../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -602,10 +618,10 @@
   height: 21px;
   font-size: 0; }
   @media (max-width: 659px) {
-    .prices-table__item--yes {
+    .prices-table__item-yes {
       background-position: 80%; } }
 
-.prices-table__item--no {
+.prices-table__item-no {
   display: block;
   background-image: url("../../img/icon-no.svg");
   background-repeat: no-repeat;
@@ -631,12 +647,14 @@
       padding-top: 59px; } }
 
 .contacts__wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 17px; }
   @media (min-width: 660px) {
     .contacts__wrapper {
       width: 620px;
       text-align: center;
-      margin-top: 14px; } }
+      margin-top: 14px;
+      padding-bottom: 0; } }
   @media (min-width: 960px) {
     .contacts__wrapper {
       width: 940px;
@@ -767,9 +785,6 @@
   list-style: none;
   display: flex;
   margin: 0; }
-  @media (min-width: 660px) {
-    .social__list {
-      margin-right: 10px; } }
   @media (min-width: 960px) {
     .social__list {
       margin: 0; } }
@@ -983,38 +998,50 @@ a {
 .impact__link {
   color: #d22856;
   text-decoration: underline; }
+  .impact__link:hover {
+    color: #283645; }
+  .impact__link:active {
+    opacity: 0.3;
+    text-decoration: none; }
 
 .copyright {
   display: flex;
-  align-items: center; }
-
-.copyright__info {
+  align-items: center;
   color: #283645;
   font-size: 14px;
   line-height: 18px;
-  margin-right: 6px; }
+  padding-left: 15px; }
   @media (min-width: 960px) {
-    .copyright__info {
+    .copyright {
       font-size: 18px; } }
 
-.copyright__link {
-  color: #000000;
-  width: 37px; }
-
 .copyright__icon {
-  width: 100%; }
+  width: 56px;
+  height: 40px;
+  padding-left: 3px; }
+  @media (min-width: 660px) {
+    .copyright__icon {
+      width: 42px;
+      height: 51px;
+      padding-left: 5px; } }
 
 .copyright__icon path {
   fill: #d22856;
-  width: auto; }
+  width: 100%; }
+
+.copyright:hover path {
+  fill: #283645; }
+
+.copyright:active path {
+  opacity: 0.3; }
 
 .page-footer {
   background-color: #ffffff;
-  padding-top: 36px;
+  padding-top: 42px;
   padding-bottom: 30px; }
   @media (min-width: 660px) {
     .page-footer {
-      padding: 50px 0; } }
+      padding: 36px 0; } }
   @media (min-width: 960px) {
     .page-footer {
       padding: 70px 0; } }
@@ -1891,11 +1918,16 @@ a {
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg); }
 
+@media (min-width: 660px) {
+  .main-nav__wrapper {
+    margin-top: 47px; } }
+
 @media (min-width: 960px) {
   .main-nav__wrapper {
     width: 700px;
     padding-top: 48px;
-    padding-bottom: 34px; } }
+    padding-bottom: 34px;
+    margin: 0; } }
 
 .main-nav--closed .main-nav__wrapper {
   display: none; }
@@ -1907,8 +1939,16 @@ a {
   background-color: rgba(0, 0, 0, 0.3); }
 
 .main-nav--opened {
-  position: static;
-  margin-bottom: -60px; }
+  position: absolute;
+  margin-bottom: -60px;
+  z-index: 10; }
+  @media (min-width: 660px) {
+    .main-nav--opened {
+      margin-bottom: -110px; } }
+
+@media (min-width: 660px) {
+  .main-nav--opened .main-nav__container {
+    background-color: #283645; } }
 
 .like {
   display: flex;
@@ -2011,6 +2051,11 @@ a {
   border: 0;
   cursor: pointer;
   margin-right: 16px; }
+  .slider__toggle:hover {
+    background-color: #283645;
+    opacity: 0.6; }
+  .slider__toggle:active {
+    opacity: 0.1; }
 
 .slider__toggle--current {
   border: 3px solid #000000;
@@ -2030,11 +2075,16 @@ a {
   height: 41px;
   background-color: transparent;
   background-repeat: no-repeat;
+  opacity: 0.3;
   border: 0;
   outline: 0;
   cursor: pointer;
   position: absolute;
   top: 29px; }
+  .slider__button:hover {
+    opacity: 0.6; }
+  .slider__button:active {
+    opacity: 0.1; }
 
 .slider__button--previous {
   left: -8px; }
