@@ -34,6 +34,7 @@ $mobile-width-only: 659px;
   padding: 0;
   position: absolute;
   width: 1px;
+  opacity: 0;
 }
 
 @mixin list-style {

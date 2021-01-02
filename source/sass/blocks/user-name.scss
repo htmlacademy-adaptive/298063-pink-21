@@ -1,6 +1,6 @@
 
 .user-name {
-  padding-bottom: 44px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -27,6 +27,8 @@
 }
 
 .user-name__item {
+  margin-bottom: -19px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-bottom: 52px;
@@ -35,8 +37,9 @@
 
 .user-name__label {
   @include form-label;
-  margin-top: 29px;
+  margin-top: 35px;
   margin-left: 21px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
@@ -44,13 +47,14 @@
 }
 
 .user-name__fill {
-  width: 93%;
+  width: 100%;
+  height: 62px;
   border: 2px solid $light-gray;
   border-radius: 1px;
 
   font-size: 18px;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 18px;
   cursor: pointer;
 
   &:hover {
@@ -64,4 +68,5 @@
 
 .user-name__fill::placeholder {
   color: $midnight-blue;
+  font-size: 18px;
 }

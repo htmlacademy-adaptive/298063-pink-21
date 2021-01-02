@@ -1,3 +1,11 @@
+.competition {
+  padding-top: 42px;
+}
+
+.competition__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
 
 .competition__intro {
   font-size: 14px;
@@ -5,10 +13,7 @@
   color: $midnight-blue;
   text-align: center;
 
-  width: 280px;
-  margin: auto;
-  margin-top: 54px;
-  margin-bottom: 55px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -28,4 +33,6 @@
   }
 }
 
-// .competition_form
+.competition_form {
+  margin-top: 6px;
+}

@@ -9,10 +9,10 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="page-header__logo">
-            <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк" width="147" height="40">
+            <img class="logo__pic" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -75,20 +75,32 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="survey__section user-app">
-              <legend class="survey__subtitle">С каким приложением путешествовали?</legend>
-              <ul class="user-app__list">
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="iOS" checked>
-                  <label  class="user-app__label" for="iOS">Pink для iOS</label>
+            <fieldset class="survey__section user-achievements">
+              <legend class="survey__subtitle">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="user-achievements__list">
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="shark" id="shark-selfie" checked>
+                  <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="Android">
-                  <label class="user-app__label" for="Android" >Pink на Android</label>
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="beach" id="sunburn" checked>
+                  <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
                 </li>
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="Windows">
-                  <label class="user-app__label" for="Windows" >Windows Phone</label>
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
+                  <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
+                </li>
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
+                  <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
+                </li>
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
+                  <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
+                </li>
+                <li class="user-achievements__option">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
+                  <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
@@ -105,32 +117,20 @@
                 </p>
               </div>
             </fieldset>
-            <fieldset class="survey__section user-achievements">
-              <legend class="survey__subtitle">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="user-achievements__list">
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="shark" id="shark-selfie" checked>
-                  <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
+            <fieldset class="survey__section user-app">
+              <legend class="survey__subtitle">С каким приложением путешествовали?</legend>
+              <ul class="user-app__list">
+                <li class="user-app__item">
+                  <input class="user-app__option" type="radio" name="user-app" id="iOS" checked>
+                  <label  class="user-app__label" for="iOS">Pink для iOS</label>
                 </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="beach" id="sunburn" checked>
-                  <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
+                <li class="user-app__item">
+                  <input class="user-app__option" type="radio" name="user-app" id="Android">
+                  <label class="user-app__label" for="Android" >Pink на Android</label>
                 </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
-                  <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
-                  <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
-                  <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
-                  <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
+                <li class="user-app__item">
+                  <input class="user-app__option" type="radio" name="user-app" id="Windows">
+                  <label class="user-app__label" for="Windows" >Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
@@ -149,7 +149,6 @@
         </div>
       </section>
     </main>
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">

@@ -60,7 +60,8 @@
 .page-header__title--form {
   padding-left: 46px;
   padding-right: 46px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
+  padding-top: 94px;
 
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -75,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 184px;
     padding-left: 220px;
     padding-right: 220px;
 
