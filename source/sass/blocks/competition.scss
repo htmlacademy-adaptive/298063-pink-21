@@ -6,6 +6,10 @@
     padding-top: 91px;
     margin-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -34px;
+  }
 }
 
 .competition__wrapper {
@@ -19,6 +23,7 @@
 
   @media (min-width: $desktop-width) {
     width: 756px;
+    margin-bottom: 78px;
   }
 }
 
@@ -32,10 +37,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 89px;
   }
 }
 

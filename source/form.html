@@ -78,27 +78,27 @@
             <fieldset class="survey__section user-achievements">
               <legend class="survey__subtitle survey__subtitle--achievements">Ваши безбашенные достижения в путешествии</legend>
               <ul class="user-achievements__list">
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--shark">
                   <input class="visually-hidden user-achievements__fill " type="checkbox" name="shark" id="shark-selfie" checked>
                   <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--sunburn">
                   <input class="visually-hidden user-achievements__fill " type="checkbox" name="beach" id="sunburn" checked>
                   <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
                 </li>
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--norris">
                   <input class="visually-hidden user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
                   <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
                 </li>
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--souvenir">
                   <input class="visually-hidden user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
                   <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
                 </li>
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--tower">
                   <input class="visually-hidden user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
                   <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
                 </li>
-                <li class="user-achievements__option">
+                <li class="user-achievements__option user-achievements__option--crush">
                   <input class="visually-hidden user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
                   <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
                 </li>
@@ -142,7 +142,8 @@
             <div class="survey__section-submit">
               <button class="survey__submit" type="submit">Отправить форму</button>
               <p class="survey__legend">
-                <span class="survey__legend-coloured">*</span> — обязательные поля
+                <span class="survey__legend-coloured">*</span>
+                — обязательные <span class="survey__legend-hidden">для заполнения</span> поля
               </p>
             </div>
           </form>

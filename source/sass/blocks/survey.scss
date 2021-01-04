@@ -1,9 +1,9 @@
-
 .survey {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,10 +47,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 65px;
   }
 }
 
@@ -81,7 +83,7 @@
 
 .survey__subtitle--app {
   @media (min-width: $tablet-width) {
-    left: 20%;
+    left: 7%;
   }
 }
 
@@ -95,6 +97,10 @@
     padding-left: 31px;
     padding-right: 31px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 36%;
+  }
 }
 
 .survey__subtitle--achievements {
@@ -103,6 +109,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 27%;
+  }
 }
 
 .survey__subtitle--emotions {
@@ -110,6 +120,12 @@
     left: 29%;
     padding-left: 37px;
     padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 36%;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 
@@ -181,8 +197,20 @@
     margin-bottom: 35px;
     margin-right: -2px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .survey__legend-coloured {
   color: $pink;
+}
+
+.survey__legend-hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }

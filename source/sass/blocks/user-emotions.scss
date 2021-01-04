@@ -18,6 +18,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 41px;
+    padding-bottom: 44px;
   }
 }
 
@@ -51,8 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 45px;
-    margin-bottom: 45px;
     padding-left: 20px;
+    min-height: auto;
+    height: 128px;
   }
 }

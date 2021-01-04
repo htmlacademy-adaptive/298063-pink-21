@@ -55,12 +55,12 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 375px;
-    margin-bottom: 22px;
+    margin-bottom: 7px;
   }
 }
 
 .user-contacts__item::after {
-  content:"";
+  content: "";
   width: 59px;
   height: 59px;
   background-color: $light-gray;
@@ -93,7 +93,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 10px;
+  }
+}
+
+.user-contacts__item:last-child .user-contacts__label {
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
   }
 }
 

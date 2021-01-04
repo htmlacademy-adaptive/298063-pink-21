@@ -13,8 +13,9 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-left: 60px;
-    padding-right: 59px;
+    padding-bottom: 1px;
+    padding-right: 39px;
+    margin-bottom: 65px;
   }
 }
 
@@ -29,11 +30,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: 315px 295px auto;
+    grid-template-rows: 1fr 1fr;
+
+    padding-bottom: 10px;
   }
 }
 
@@ -42,6 +43,10 @@
   padding-left: 12px;
 
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }
 
 .user-achievements__option:last-child {
@@ -54,7 +59,7 @@
   color: $midnight-blue;
 }
 
-.user-achievements__fill+.user-achievements__label::before {
+.user-achievements__fill + .user-achievements__label::before {
   content: "";
   display: inline-block;
   width: 35px;
@@ -69,7 +74,7 @@
   top: -3px;
 }
 
-.user-achievements__fill:checked+.user-achievements__label::after {
+.user-achievements__fill:checked + .user-achievements__label::after {
   content: "";
   display: inline-block;
   width: 35px;
@@ -87,4 +92,30 @@
   top: -3px;
 
   cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .user-achievements__option--shark {
+    order: 1;
+  }
+
+  .user-achievements__option--sunburn {
+    order: 4;
+  }
+
+  .user-achievements__option--norris {
+    order: 2;
+  }
+
+  .user-achievements__option--souvenir {
+    order: 5;
+  }
+
+  .user-achievements__option--tower {
+    order: 3;
+  }
+
+  .user-achievements__option--crush {
+    order: 6;
+  }
 }
