@@ -6,6 +6,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding-top: 55px;
+    margin-bottom: 66px;
     order: 4;
   }
 
@@ -20,6 +22,11 @@
   @include list-style;
   margin: 0;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 104px;
+    padding-bottom: 7px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

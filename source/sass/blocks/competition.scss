@@ -1,11 +1,25 @@
 .competition {
   padding-top: 42px;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 91px;
+    margin-bottom: 14px;
+  }
 }
 
 .competition__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+  }
 }
 
 .competition__intro {
@@ -18,12 +32,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    width: 490px;
-    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 756px;
     margin-bottom: 89px;
   }
 }
@@ -34,6 +45,9 @@
   }
 }
 
-.competition_form {
-  margin-top: 6px;
+.competition__form {
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+    margin-right: 22px;
+  }
 }

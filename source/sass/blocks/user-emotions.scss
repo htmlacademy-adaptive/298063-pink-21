@@ -8,8 +8,10 @@
     justify-content: center;
     align-items: center;
 
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 57px;
+    padding-top: 46px;
+    padding-right: 57px;
+    padding-bottom: 49px;
 
     order: 5;
   }
@@ -22,7 +24,7 @@
 .user-emotions__fill {
   width: 100%;
   box-sizing: border-box;
-  min-height: 200px;
+  min-height: 193px;
   margin-top: 22px;
   padding-top: 12px;
   padding-right: 20px;
@@ -46,8 +48,6 @@
     box-sizing: border-box;
     width: 100%;
     margin: auto;
-    margin-top: 42px;
-    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
