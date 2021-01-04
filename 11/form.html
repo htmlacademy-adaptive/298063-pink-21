@@ -10,10 +10,10 @@
 </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="page-header__logo">
-            <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк" width="147" height="40">
+            <img class="logo__pic" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -76,25 +76,37 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="survey__section user-app">
-              <legend class="survey__subtitle">С каким приложением путешествовали?</legend>
-              <ul class="user-app__list">
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="iOS" checked>
-                  <label  class="user-app__label" for="iOS">Pink для iOS</label>
+            <fieldset class="survey__section user-achievements">
+              <legend class="survey__subtitle survey__subtitle--achievements">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="user-achievements__list">
+                <li class="user-achievements__option user-achievements__option--shark">
+                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="shark" id="shark-selfie" checked>
+                  <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="Android">
-                  <label class="user-app__label" for="Android" >Pink на Android</label>
+                <li class="user-achievements__option user-achievements__option--sunburn">
+                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="beach" id="sunburn" checked>
+                  <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
                 </li>
-                <li class="user-app__item">
-                  <input class="user-app__option" type="radio" name="user-app" id="Windows">
-                  <label class="user-app__label" for="Windows" >Windows Phone</label>
+                <li class="user-achievements__option user-achievements__option--norris">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
+                  <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
+                </li>
+                <li class="user-achievements__option user-achievements__option--souvenir">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
+                  <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
+                </li>
+                <li class="user-achievements__option user-achievements__option--tower">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
+                  <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
+                </li>
+                <li class="user-achievements__option user-achievements__option--crush">
+                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
+                  <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="survey__section user-contacts">
-              <legend class="survey__subtitle survey__subtitle--hidden">Контактная информация</legend>
+              <legend class="survey__subtitle survey__subtitle--contacts">Контактная информация</legend>
               <div class="user-contacts__wrapper">
                 <p class="user-contacts__item">
                   <input class="user-contacts__fill" type="tel" id="phone" placeholder="Номер, пожалуйста">
@@ -106,51 +118,39 @@
                 </p>
               </div>
             </fieldset>
-            <fieldset class="survey__section user-achievements">
-              <legend class="survey__subtitle">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="user-achievements__list">
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="shark" id="shark-selfie" checked>
-                  <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
+            <fieldset class="survey__section user-app">
+              <legend class="survey__subtitle survey__subtitle--app">С каким приложением путешествовали?</legend>
+              <ul class="user-app__list">
+                <li class="user-app__item">
+                  <input class=" visually-hidden user-app__option" type="radio" name="user-app" id="iOS" checked>
+                  <label  class="user-app__label" for="iOS">Pink для iOS</label>
                 </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="beach" id="sunburn" checked>
-                  <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
+                <li class="user-app__item">
+                  <input class="visually-hidden user-app__option" type="radio" name="user-app" id="Android">
+                  <label class="user-app__label" for="Android" >Pink на Android</label>
                 </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
-                  <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
-                  <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
-                  <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
-                </li>
-                <li class="user-achievements__option">
-                  <input class="user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
-                  <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
+                <li class="user-app__item">
+                  <input class="visually-hidden user-app__option" type="radio" name="user-app" id="Windows">
+                  <label class="user-app__label" for="Windows" >Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="survey__section user-emotions">
-              <legend class="survey__subtitle">Опишите свои эмоции</legend>
+              <legend class="survey__subtitle survey__subtitle--emotions">Опишите свои эмоции</legend>
               <textarea class="user-emotions__fill" name="impressions" id="user-impressions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <label for="user-impressions" class="visually-hidden">Расскажите о своих впечатлениях</label>
             </fieldset>
             <div class="survey__section-submit">
               <button class="survey__submit" type="submit">Отправить форму</button>
               <p class="survey__legend">
-                <span class="survey__legend-coloured">*</span> — обязательные поля
+                <span class="survey__legend-coloured">*</span>
+                — обязательные <span class="survey__legend-hidden">для заполнения</span> поля
               </p>
             </div>
           </form>
         </div>
       </section>
     </main>
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -194,5 +194,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>
