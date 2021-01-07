@@ -1,6 +1,6 @@
 .like {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -15,6 +15,10 @@
   background-repeat: no-repeat;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .like__amount {
@@ -24,4 +28,10 @@
 
   margin: 0;
   margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+    margin-left: 0;
+    order: 1;
+  }
 }

@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     height: 509px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
 }
 
 .photo-highlight__label {
@@ -31,5 +35,10 @@
 
   @media (min-width: $tablet-width) {
     top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
   }
 }
