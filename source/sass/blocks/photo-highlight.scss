@@ -1,4 +1,35 @@
+.photo-highlight {
+  position: relative;
+}
+
 .photo-highlight__image {
   width: 100%;
   margin-bottom: -2px;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+}
+
+.photo-highlight__label {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white;
+
+  display: block;
+  width: 140px;
+  background-color: $pink;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 6px;
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+  }
 }

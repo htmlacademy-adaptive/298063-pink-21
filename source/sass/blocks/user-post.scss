@@ -2,7 +2,11 @@
 .user-post__container {
   background-color: $gray;
 
-  padding: 25px 30px 23px 27px;
+  padding-right: 7px;
+  padding-left: 17px;
+  padding-bottom: 20px;
+  padding-top: 17px;
+
   margin: 0;
   margin-top: -7px;
   box-sizing: border-box;
@@ -42,4 +46,22 @@
 
 .user-post__image img {
   width: 100%;
+}
+
+.user-post__likes {
+  margin-top: 11px;
+}
+
+.user-post__container--panorama {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.user-post__container--panorama .user-post__likes {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
 }

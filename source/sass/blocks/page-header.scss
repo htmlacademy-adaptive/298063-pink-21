@@ -44,11 +44,18 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -65px;
+  background-position: center 0;
+
+  padding-top: 93px;
+  padding-bottom: 77px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-position: center -50px;
+    background-position: center 0;
+    background-size: 182%;
+
+    padding-top: 177px;
+    padding-bottom: 126px;
   }
 
   @media (min-width: $desktop-width) {
