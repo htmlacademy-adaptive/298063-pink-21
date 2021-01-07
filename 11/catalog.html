@@ -11,12 +11,11 @@
   <body class="page__body">
 
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
           <a class="page-header__logo">
-            <img src="https://via.placeholder.com/150x150" alt="Логотип Пинк" width="74" height="23">
+            <img class="logo__pic" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
           </a>
-
 
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -57,17 +56,18 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photo-highlight">
-          <a href="">
+          <a class="photo-highlight__item" href="">
             <img class="photo-highlight__image" src="img/panorama-mobile@1x.jpg" alt="Подвесной мост">
+            <span class="photo-highlight__label">Панорама дня</span>
           </a>
         </div>
         <ul class="photo-section__list user-photo">
           <li class="user-photo__item user-photo__item--panorama user-post">
-            <div class="user-post__container">
+            <div class="user-post__container user-post__container--panorama">
               <p class="user-post__comment">
                 <strong>Анна</strong> <span class="user-post__time">(5 минут назад)</span> <br>
                 Прыгать или нет? Напишите в комментарии свой совет и
-                смотрите прямую трансляцию в
+                <br> смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!
               </p>
               <div class="user-post__likes like">
