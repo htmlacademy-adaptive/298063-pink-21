@@ -163,13 +163,16 @@
   margin: auto;
 
   position: relative;
+  background-image: url("../../img/map-mobile.png");
 
   @media (min-width: $tablet-width) {
     height: 377px;
+    background-image: url("../../img/map-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
     height: 522px;
+    background-image: url("../../img/map-desktop.png");
   }
 }
 
