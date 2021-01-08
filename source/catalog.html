@@ -12,8 +12,12 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
-          <a class="page-header__logo">
-            <img class="logo__pic" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Пинк">
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img\logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img\logo-pink-white-tablet.svg">
+              <img class="logo__pic" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+            </picture>
           </a>
 
           <button class="main-nav__toggle" type="button">
@@ -56,7 +60,11 @@
         </p>
         <div class="photo-highlight">
           <a class="photo-highlight__item" href="">
-            <img class="photo-highlight__image" src="img/panorama-mobile@1x.jpg" alt="Подвесной мост">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img\panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img\panorama-tablet@2x.jpg 2x">
+              <img class="photo-highlight__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Подвесной мост">
+            </picture>
             <span class="photo-highlight__label">Панорама дня</span>
           </a>
         </div>
@@ -77,7 +85,11 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль белого цвета на фоне серой стены">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль белого цвета на фоне серой стены">
+              </picture>
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -92,7 +104,11 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg"  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+              </picture>
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
@@ -107,7 +123,11 @@
           </li>
           <li class="user-photo__item user-post">
             <a class="user-post__image" href="">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Стеклянный потолок">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Стеклянный потолок">
+              </picture>
             </a>
             <div class="user-post__container">
               <p class="user-post__comment">
