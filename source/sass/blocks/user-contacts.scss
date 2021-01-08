@@ -68,8 +68,12 @@
   background-position: center center;
 
   position: absolute;
-  top: 0;
+  top: 37px;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .user-contacts__item:first-child::after {

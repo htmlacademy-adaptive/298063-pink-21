@@ -1,7 +1,11 @@
 .like {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .like__button {
