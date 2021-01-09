@@ -31,13 +31,20 @@
 
   @media (min-width: $desktop-width) {
     box-shadow: none;
+    border-top: none;
     display: block;
     min-width: auto;
     min-height: auto;
     text-transform: none;
 
-    padding-bottom: 19px;
+    padding-bottom: 20px;
     margin-left: 79px;
+  }
+}
+
+.site-nav__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
   }
 }
 

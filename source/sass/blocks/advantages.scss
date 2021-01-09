@@ -41,7 +41,7 @@
   }
 }
 
-.advantages__title--bottom {
+.advantages__title-bottom {
   display: block;
   margin-top: 28px;
 
@@ -51,7 +51,7 @@
 }
 
 
-.advantanges__wrapper {
+.advantages__wrapper {
   background-color: $gray;
 
   display: flex;
@@ -79,7 +79,7 @@
   }
 }
 
-.advantanges__wrapper::before {
+.advantages__wrapper::before {
   content: "";
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
