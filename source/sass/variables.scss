@@ -11,6 +11,7 @@ $green: #2aab6d;
 $dark-green: #1c9b5e;
 $transparent-white: rgba(255, 255, 255, 0.3);
 $transparent-blue: #bfc3c7;
+$transparent-gray:#eaebec;
 
 // Viewports
 
@@ -33,6 +34,7 @@ $mobile-width-only: 659px;
   padding: 0;
   position: absolute;
   width: 1px;
+  opacity: 0;
 }
 
 @mixin list-style {

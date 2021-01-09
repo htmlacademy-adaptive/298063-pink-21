@@ -1,9 +1,21 @@
 
 .main-nav {
   background-color: $midnight-blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 66px;
+  z-index: 3;
 }
 
 .main-nav__container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
@@ -14,15 +26,122 @@
 }
 
 .main-nav__toggle {
+  display: block;
+
+  position: absolute;
+  top: 23px;
+  right: 21px;
+
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $pink;
+  box-shadow: 0 8px 0 0 $pink, 0 16px 0 0 $pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $pink;
+  box-shadow: 0 8px 0 0 $pink, 0 16px 0 0 $pink;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 27px;
+    height: 3px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: $pink;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: $pink;
+  opacity: 0.3;
+}
+
 .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 700px;
-    padding-top: 48px;
-    padding-bottom: 34px;
+    padding-top: 53px;
+    padding-bottom: 33px;
+    margin: 0;
+  }
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav--closed {
+  background-color: $header-transparent-color;
+}
+
+.main-nav--opened {
+  position: absolute;
+  margin-bottom: -60px;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -110px;
+  }
+}
+
+.main-nav--opened .main-nav__container {
+  @media (min-width: $tablet-width) {
+    background-color: $midnight-blue;
   }
 }

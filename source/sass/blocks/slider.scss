@@ -1,0 +1,85 @@
+.slider {
+  position: relative;
+}
+
+.slider__toggles {
+  display: flex;
+
+  width: 88px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 31px;
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  width: 10px;
+  height: 10px;
+  background-color: $transparent-blue;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+
+  margin-right: 16px;
+
+  &:hover {
+    background-color: $midnight-blue;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle--current {
+  border: 3px solid $black;
+  background-color: $white;
+}
+
+.slider__toggle:last-child {
+  margin: 0;
+}
+
+.slider__buttons {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__button {
+  width: 22px;
+  height: 41px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  position: absolute;
+  top: 29px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__button--previous {
+  left: -8px;
+}
+
+.slider__button--next {
+  right: 8px;
+}

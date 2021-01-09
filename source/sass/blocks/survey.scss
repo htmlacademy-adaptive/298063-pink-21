@@ -1,7 +1,10 @@
-
 .survey {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -17,19 +20,18 @@
   padding-left: 22px;
   padding-right: 22px;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     border: 2px solid $light-gray;
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-bottom: 70px;
-
-    padding-left: 60px;
+    padding: 0;
   }
 }
 
 .survey__section-submit {
   padding-left: 22px;
   padding-right: 22px;
+  margin-top: 47px;
 
   display: flex;
   flex-direction: column;
@@ -39,13 +41,18 @@
     order: 6;
     flex-direction: row;
     justify-content: space-between;
+
+    padding: 0;
+    margin-top: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 65px;
   }
 }
 
@@ -59,11 +66,66 @@
   text-align: center;
 
   margin: 0;
+  width: 254px;
+
+  position: absolute;
+  top: 40px;
+  left: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    top: -10px;
+    background-color: $white;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
-.survey__subtitle--hidden {
+.survey__subtitle--app {
+  @media (min-width: $tablet-width) {
+    left: 7%;
+  }
+}
+
+.survey__subtitle--contacts {
   @media (max-width: $mobile-width-only) {
     @include visually-hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 29%;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 36%;
+  }
+}
+
+.survey__subtitle--achievements {
+  @media (min-width: $tablet-width) {
+    left: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 27%;
+  }
+}
+
+.survey__subtitle--emotions {
+  @media (min-width: $tablet-width) {
+    left: 29%;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 36%;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 
@@ -92,8 +154,8 @@
 }
 
 .survey__submit {
-  width: 276px;
-  height: 59px;
+  width: 278px;
+  height: 62px;
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
@@ -105,8 +167,7 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  margin-top: 52px;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
 
   cursor: pointer;
   outline: none;
@@ -119,6 +180,10 @@
   &:active {
     color: $transparent-white;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .survey__legend {
@@ -127,9 +192,25 @@
   text-transform: uppercase;
 
   margin: 0;
-  margin-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    margin-right: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .survey__legend-coloured {
   color: $pink;
+}
+
+.survey__legend-hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }

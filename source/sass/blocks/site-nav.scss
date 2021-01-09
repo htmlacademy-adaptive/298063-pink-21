@@ -19,24 +19,32 @@
     line-height: 18px;
     font-weight: 400;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .site-nav__item {
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-top: 1px solid $black;
 
   @media (min-width: $desktop-width) {
     box-shadow: none;
+    border-top: none;
     display: block;
     min-width: auto;
     min-height: auto;
     text-transform: none;
 
-    padding-bottom: 19px;
+    padding-bottom: 20px;
     margin-left: 79px;
+  }
+}
 
-    &--active {
-      border-bottom: 2px solid $white;
-    }
+.site-nav__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -54,5 +62,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }

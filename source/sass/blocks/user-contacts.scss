@@ -1,11 +1,13 @@
 
 .user-contacts {
-  padding-bottom: 15px;
-  padding-top: 42px;
+  padding-bottom: 25px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     order: 3;
     padding-top: 46px;
+    padding-bottom: 0;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +22,14 @@
 }
 
 .user-contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -31,34 +39,77 @@
 
 .user-contacts__item {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
     flex-basis: 375px;
-    margin-bottom: 22px;
+    margin-bottom: 7px;
   }
+}
+
+.user-contacts__item::after {
+  content: "";
+  width: 59px;
+  height: 59px;
+  background-color: $light-gray;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+.user-contacts__item:first-child::after {
+  background-image: url("../../img/icon_phone.svg");
+}
+
+.user-contacts__item:last-child::after {
+  background-image: url("../../img/icon-mail.svg");
 }
 
 .user-contacts__label {
   @include form-label;
   margin-left: 21px;
+  margin-bottom: 7px;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;
+    margin-top: 11px;
+    order: 2;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 10px;
+  }
+}
+
+.user-contacts__item:last-child .user-contacts__label {
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
   }
 }
 
 .user-contacts__fill {
-  width: 93%;
+  width: 100%;
+  height: 60px;
   border: 2px solid $light-gray;
   border-radius: 1px;
 
@@ -67,12 +118,18 @@
   padding-left: 20px;
   cursor: pointer;
 
+  order: 2;
+
   &:hover {
     border: 2px solid $midnight-blue;
   }
 
   &:focus {
     outline-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
 }
 

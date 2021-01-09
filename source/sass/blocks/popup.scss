@@ -1,0 +1,124 @@
+.popup {
+  width: 320px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  padding-top: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: auto;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 268px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.popup__text {
+  color: $midnight-blue;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 330px;
+  }
+}
+
+.popup__text--failure {
+  @media (min-width: $desktop-width) {
+    width: 351px;
+    margin-bottom: 68px;
+  }
+}
+
+.popup__text--success {
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 378px;
+    margin-bottom: 44px;
+  }
+}
+
+.popup__button-container {
+  height: 148px;
+  border-radius: 0 0 5px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    height: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: $gray;
+  }
+}
+
+.popup__button {
+  width: 276px;
+  min-height: 59px;
+  border: 2px solid $green;
+  border-radius: 1px;
+  background-color: $green;
+
+  color: $white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $dark-green;
+    border-color: $dark-green;
+  }
+
+  &:active {
+    color: $transparent-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
+}

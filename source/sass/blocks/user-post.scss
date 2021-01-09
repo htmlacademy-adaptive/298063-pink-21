@@ -2,7 +2,11 @@
 .user-post__container {
   background-color: $gray;
 
-  padding: 25px 30px 23px 27px;
+  padding-right: 7px;
+  padding-left: 17px;
+  padding-bottom: 20px;
+  padding-top: 17px;
+
   margin: 0;
   margin-top: -7px;
   box-sizing: border-box;
@@ -12,7 +16,16 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    height: 155px;
+    height: 162px;
+
+    padding-left: 31px;
+    padding-top: 29px;
+    padding-right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+    padding-top: 30px;
   }
 }
 
@@ -31,6 +44,8 @@
   height: 180px;
 
   @media (min-width: $tablet-width) {
+    display: block;
+
     width: 300px;
     height: 300px;
   }
@@ -42,4 +57,49 @@
 
 .user-post__image img {
   width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}
+
+.user-post__likes {
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
+}
+
+.user-post__container--panorama {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    height: 120px;
+    padding-left: 31px;
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 96px;
+    padding-left: 27px;
+  }
+}
+
+.user-post__container--panorama .user-post__likes {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 13px;
+    right: 27px;
+  }
+}
+
+.user-post__container--panorama br:last-child {
+  display: none;
 }

@@ -1,15 +1,15 @@
 
 .page-footer {
   background-color: $white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 42px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 0;
+    padding: 36px 0;
+  }
 
-    // Временный стиль
-    font-size: 12px;
-    line-height: 12px;
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
   }
 }
 
@@ -27,7 +27,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -36,10 +36,28 @@
   }
 }
 
-.page-footer__logo img {
-  width: 147px;
+.page-footer__logo {
+  background-image: url("../../img/logo-pink-blue-mobile.svg");
+  width: 145px;
   height: 40px;
+  font-size: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: -14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/logo-pink-blue-desktop.svg");
+    margin-right: 14px;
+  }
 }
 
+.page-footer__copyright {
+  margin-top: 39px;
 
-// .page-footer__copyright
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
