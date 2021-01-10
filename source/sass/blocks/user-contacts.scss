@@ -62,17 +62,17 @@
 .user-contacts__item::after {
   content: "";
   width: 59px;
-  height: 59px;
+  height: 56px;
   background-color: $light-gray;
   background-repeat: no-repeat;
   background-position: center center;
 
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 39px;
+  right: 2px;
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: 2px;
   }
 }
 
@@ -125,7 +125,7 @@
   }
 
   &:focus {
-    outline-color: $pink;
+    border-color: $pink;
   }
 
   @media (min-width: $tablet-width) {

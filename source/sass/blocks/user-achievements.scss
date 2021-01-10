@@ -94,6 +94,16 @@
   cursor: pointer;
 }
 
+.user-achievements__fill + .user-achievements__label:hover::before,
+.user-achievements__fill:checked + .user-achievements__label:hover::after {
+  border-color: $midnight-blue;
+}
+
+.user-achievements__fill + .user-achievements__label:active::before,
+.user-achievements__fill:checked + .user-achievements__label:active::after {
+  border-color: $pink;
+}
+
 @media (min-width: $desktop-width) {
   .user-achievements__option--shark {
     order: 1;
