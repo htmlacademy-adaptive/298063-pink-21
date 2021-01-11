@@ -1282,7 +1282,7 @@ a {
 .survey__section-submit {
   padding-left: 22px;
   padding-right: 22px;
-  margin-top: 47px;
+  margin-top: 49px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -1603,6 +1603,12 @@ a {
 .user-achievements__fill:checked + .user-achievements__label:active::after {
   border-color: #d22856; }
 
+.user-achievements__fill:disabled + .user-achievements__label::before,
+.user-achievements__fill:disabled + .user-achievements__label::after {
+  border-color: #e5e5e5;
+  opacity: 0.5;
+  cursor: default; }
+
 @media (min-width: 960px) {
   .user-achievements__option--shark {
     order: 1; }
@@ -1664,19 +1670,17 @@ a {
       flex-basis: 375px;
       margin-bottom: 7px; } }
 
-.user-contacts__item::after {
-  content: "";
-  width: 59px;
-  height: 56px;
-  background-color: #e5e5e5;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: 39px;
-  right: 2px; }
-  @media (min-width: 660px) {
-    .user-contacts__item::after {
-      top: 2px; } }
+@media (min-width: 660px) {
+  .user-contacts__item::after {
+    content: "";
+    width: 59px;
+    height: 56px;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 2px;
+    right: 2px; } }
 
 .user-contacts__item:first-child::after {
   background-image: url("../../img/icon_phone.svg"); }
@@ -1783,8 +1787,11 @@ a {
   border-radius: 50%;
   position: absolute;
   top: -4px;
-  left: -60px;
+  left: -70px;
   cursor: pointer; }
+  @media (min-width: 660px) {
+    .user-app__option + .user-app__label::before {
+      left: -60px; } }
 
 .user-app__option:checked + .user-app__label::after {
   content: "";
@@ -1798,8 +1805,11 @@ a {
   background-position: center center;
   position: absolute;
   top: -4px;
-  left: -60px;
+  left: -70px;
   cursor: pointer; }
+  @media (min-width: 660px) {
+    .user-app__option:checked + .user-app__label::after {
+      left: -60px; } }
 
 .user-app__option + .user-app__label:hover::before,
 .user-app__option:checked + .user-app__label:hover::after {
@@ -1808,6 +1818,12 @@ a {
 .user-app__option + .user-app__label:active::before,
 .user-app__option:checked + .user-app__label:active::after {
   border-color: #d22856; }
+
+.user-app__option:disabled + .user-app__label::before,
+.user-app__option:disabled + .user-app__label::after {
+  border-color: #e5e5e5;
+  opacity: 0.5;
+  cursor: default; }
 
 .user-emotions {
   padding-top: 53px;
