@@ -60,19 +60,17 @@
 }
 
 .user-contacts__item::after {
-  content: "";
-  width: 59px;
-  height: 56px;
-  background-color: $light-gray;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  position: absolute;
-  top: 39px;
-  right: 2px;
-
   @media (min-width: $tablet-width) {
+    content: "";
+    width: 59px;
+    height: 56px;
+    background-color: $light-gray;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: absolute;
     top: 2px;
+    right: 2px;
   }
 }
 

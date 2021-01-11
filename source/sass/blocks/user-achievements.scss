@@ -104,6 +104,13 @@
   border-color: $pink;
 }
 
+.user-achievements__fill:disabled + .user-achievements__label::before,
+.user-achievements__fill:disabled + .user-achievements__label::after {
+  border-color: $light-gray;
+  opacity: 0.5;
+  cursor: default;
+}
+
 @media (min-width: $desktop-width) {
   .user-achievements__option--shark {
     order: 1;

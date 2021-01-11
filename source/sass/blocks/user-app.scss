@@ -62,9 +62,13 @@
 
   position: absolute;
   top: -4px;
-  left: -60px;
+  left: -70px;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+  }
 }
 
 .user-app__option:checked + .user-app__label::after {
@@ -80,9 +84,13 @@
 
   position: absolute;
   top: -4px;
-  left: -60px;
+  left: -70px;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+  }
 }
 
 .user-app__option + .user-app__label:hover::before,
@@ -93,4 +101,11 @@
 .user-app__option + .user-app__label:active::before,
 .user-app__option:checked + .user-app__label:active::after {
   border-color: $pink;
+}
+
+.user-app__option:disabled + .user-app__label::before,
+.user-app__option:disabled + .user-app__label::after {
+  border-color: $light-gray;
+  opacity: 0.5;
+  cursor: default;
 }
