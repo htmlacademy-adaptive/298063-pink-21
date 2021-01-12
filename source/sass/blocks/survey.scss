@@ -31,7 +31,7 @@
 .survey__section-submit {
   padding-left: 22px;
   padding-right: 22px;
-  margin-top: 47px;
+  margin-top: 49px;
 
   display: flex;
   flex-direction: column;
@@ -83,6 +83,10 @@
 
 .survey__subtitle--app {
   @media (min-width: $tablet-width) {
+    left: 20%;
+  }
+
+  @media (min-width: $desktop-width) {
     left: 7%;
   }
 }

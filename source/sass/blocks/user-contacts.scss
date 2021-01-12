@@ -60,19 +60,17 @@
 }
 
 .user-contacts__item::after {
-  content: "";
-  width: 59px;
-  height: 59px;
-  background-color: $light-gray;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  position: absolute;
-  top: 37px;
-  right: 0;
-
   @media (min-width: $tablet-width) {
-    top: 0;
+    content: "";
+    width: 59px;
+    height: 56px;
+    background-color: $light-gray;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
   }
 }
 
@@ -82,57 +80,4 @@
 
 .user-contacts__item:last-child::after {
   background-image: url("../../img/icon-mail.svg");
-}
-
-.user-contacts__label {
-  @include form-label;
-  margin-left: 21px;
-  margin-bottom: 7px;
-  order: 1;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 17px;
-    margin-top: 11px;
-    order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 10px;
-  }
-}
-
-.user-contacts__item:last-child .user-contacts__label {
-  @media (min-width: $desktop-width) {
-    margin-left: 20px;
-  }
-}
-
-.user-contacts__fill {
-  width: 100%;
-  height: 60px;
-  border: 2px solid $light-gray;
-  border-radius: 1px;
-
-  font-size: 18px;
-  line-height: 30px;
-  padding-left: 20px;
-  cursor: pointer;
-
-  order: 2;
-
-  &:hover {
-    border: 2px solid $midnight-blue;
-  }
-
-  &:focus {
-    outline-color: $pink;
-  }
-
-  @media (min-width: $tablet-width) {
-    order: 1;
-  }
-}
-
-.user-contacts__fill::placeholder {
-  color: $midnight-blue;
 }
