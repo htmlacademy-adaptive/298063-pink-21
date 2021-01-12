@@ -1323,6 +1323,10 @@ a {
 
 @media (min-width: 660px) {
   .survey__subtitle--app {
+    left: 20%; } }
+
+@media (min-width: 960px) {
+  .survey__subtitle--app {
     left: 7%; } }
 
 @media (max-width: 659px) {
@@ -1481,42 +1485,6 @@ a {
     .user-name__item {
       margin-bottom: 54px; } }
 
-.user-name__label {
-  display: block;
-  color: #d22856;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-top: 35px;
-  margin-left: 21px;
-  margin-bottom: 7px; }
-  @media (min-width: 660px) {
-    .user-name__label {
-      margin: 0;
-      margin-right: 20px; } }
-
-.user-name__fill {
-  width: 100%;
-  height: 62px;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-  font-size: 18px;
-  line-height: 30px;
-  padding-left: 18px;
-  cursor: pointer; }
-  .user-name__fill:hover {
-    border: 2px solid #283645; }
-  .user-name__fill:focus {
-    border-color: #d22856; }
-
-.user-name__fill::-moz-placeholder {
-  color: #283645;
-  font-size: 18px; }
-
-.user-name__fill::placeholder {
-  color: #283645;
-  font-size: 18px; }
-
 .user-achievements {
   background-color: #f2f2f2;
   padding-top: 117px;
@@ -1560,54 +1528,6 @@ a {
 
 .user-achievements__option:last-child {
   margin-bottom: 0; }
-
-.user-achievements__label {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645; }
-
-.user-achievements__fill + .user-achievements__label::before {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-  cursor: pointer;
-  position: absolute;
-  left: -47px;
-  top: -3px; }
-
-.user-achievements__fill:checked + .user-achievements__label::after {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-  background-image: url("../../img/tick.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: absolute;
-  left: -47px;
-  top: -3px;
-  cursor: pointer; }
-
-.user-achievements__fill + .user-achievements__label:hover::before,
-.user-achievements__fill:checked + .user-achievements__label:hover::after {
-  border-color: #283645; }
-
-.user-achievements__fill + .user-achievements__label:active::before,
-.user-achievements__fill:checked + .user-achievements__label:active::after {
-  border-color: #d22856; }
-
-.user-achievements__fill:disabled + .user-achievements__label::before,
-.user-achievements__fill:disabled + .user-achievements__label::after {
-  border-color: #e5e5e5;
-  opacity: 0.5;
-  cursor: default; }
 
 @media (min-width: 960px) {
   .user-achievements__option--shark {
@@ -1688,52 +1608,6 @@ a {
 .user-contacts__item:last-child::after {
   background-image: url("../../img/icon-mail.svg"); }
 
-.user-contacts__label {
-  display: block;
-  color: #d22856;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-left: 21px;
-  margin-bottom: 7px;
-  order: 1; }
-  @media (min-width: 660px) {
-    .user-contacts__label {
-      margin-left: 17px;
-      margin-top: 11px;
-      order: 2; } }
-  @media (min-width: 960px) {
-    .user-contacts__label {
-      margin-top: 10px; } }
-
-@media (min-width: 960px) {
-  .user-contacts__item:last-child .user-contacts__label {
-    margin-left: 20px; } }
-
-.user-contacts__fill {
-  width: 100%;
-  height: 60px;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
-  font-size: 18px;
-  line-height: 30px;
-  padding-left: 20px;
-  cursor: pointer;
-  order: 2; }
-  .user-contacts__fill:hover {
-    border: 2px solid #283645; }
-  .user-contacts__fill:focus {
-    border-color: #d22856; }
-  @media (min-width: 660px) {
-    .user-contacts__fill {
-      order: 1; } }
-
-.user-contacts__fill::-moz-placeholder {
-  color: #283645; }
-
-.user-contacts__fill::placeholder {
-  color: #283645; }
-
 .user-app {
   background-color: #f2f2f2; }
   @media (min-width: 660px) {
@@ -1773,58 +1647,6 @@ a {
     .user-app__item {
       margin-left: 10px; } }
 
-.user-app__label {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645; }
-
-.user-app__option + .user-app__label::before {
-  content: "";
-  width: 37px;
-  height: 37px;
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
-  position: absolute;
-  top: -4px;
-  left: -70px;
-  cursor: pointer; }
-  @media (min-width: 660px) {
-    .user-app__option + .user-app__label::before {
-      left: -60px; } }
-
-.user-app__option:checked + .user-app__label::after {
-  content: "";
-  width: 37px;
-  height: 37px;
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
-  background-image: url("../../img/radio_small.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: -4px;
-  left: -70px;
-  cursor: pointer; }
-  @media (min-width: 660px) {
-    .user-app__option:checked + .user-app__label::after {
-      left: -60px; } }
-
-.user-app__option + .user-app__label:hover::before,
-.user-app__option:checked + .user-app__label:hover::after {
-  border-color: #283645; }
-
-.user-app__option + .user-app__label:active::before,
-.user-app__option:checked + .user-app__label:active::after {
-  border-color: #d22856; }
-
-.user-app__option:disabled + .user-app__label::before,
-.user-app__option:disabled + .user-app__label::after {
-  border-color: #e5e5e5;
-  opacity: 0.5;
-  cursor: default; }
-
 .user-emotions {
   padding-top: 53px;
   padding-right: 22px; }
@@ -1843,42 +1665,6 @@ a {
       width: 100%;
       padding-top: 41px;
       padding-bottom: 44px; } }
-
-.user-emotions__fill {
-  width: 100%;
-  height: 197px;
-  margin-top: 22px;
-  padding-top: 12px;
-  padding-right: 20px;
-  padding-left: 19px;
-  border: 2px solid #e5e5e5;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  resize: none; }
-  .user-emotions__fill::-moz-placeholder {
-    color: #283645;
-    opacity: 1; }
-  .user-emotions__fill::placeholder {
-    color: #283645;
-    opacity: 1; }
-  .user-emotions__fill:hover {
-    border-color: #283645; }
-  .user-emotions__fill:focus-visible {
-    border-color: #d22856; }
-  .user-emotions__fill:focus-visible::-moz-placeholder {
-    font-size: 0; }
-  .user-emotions__fill:focus-visible::placeholder {
-    font-size: 0; }
-  @media (min-width: 660px) {
-    .user-emotions__fill {
-      height: 189px;
-      margin: auto; } }
-  @media (min-width: 960px) {
-    .user-emotions__fill {
-      padding-left: 20px;
-      height: 128px; } }
 
 .photo-section {
   background-color: #ffffff;
@@ -2705,5 +2491,169 @@ a {
   @media (min-width: 660px) {
     .popup__button {
       width: 295px; } }
+
+.input {
+  width: 100%; }
+
+.input__label {
+  display: block;
+  color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.input__label--name {
+  margin-top: 35px;
+  margin-left: 21px;
+  margin-bottom: 7px; }
+  @media (min-width: 660px) {
+    .input__label--name {
+      margin: 0;
+      margin-right: 20px; } }
+
+.input__fill {
+  width: 100%;
+  height: 62px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px; }
+  .input__fill::-moz-placeholder {
+    color: #283645;
+    font-size: 18px; }
+  .input__fill::placeholder {
+    color: #283645;
+    font-size: 18px; }
+  .input__fill:hover {
+    border: 2px solid #283645; }
+  .input__fill:focus {
+    border-color: #d22856; }
+
+.input__fill--name {
+  padding-left: 18px; }
+
+.input__label--contacts {
+  margin-left: 21px;
+  margin-bottom: 7px;
+  order: 1; }
+  @media (min-width: 660px) {
+    .input__label--contacts {
+      margin-left: 17px;
+      margin-top: 11px;
+      order: 2; } }
+  @media (min-width: 960px) {
+    .input__label--contacts {
+      margin-top: 10px; } }
+
+.input__fill--contacts {
+  height: 60px;
+  padding-left: 20px;
+  order: 2; }
+  @media (min-width: 660px) {
+    .input__fill--contacts {
+      order: 1; } }
+
+.input__fill--emotions {
+  height: 197px;
+  margin-top: 22px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 19px;
+  font-weight: 400;
+  resize: none; }
+  .input__fill--emotions::-moz-placeholder {
+    opacity: 1; }
+  .input__fill--emotions::placeholder {
+    opacity: 1; }
+  @media (min-width: 660px) {
+    .input__fill--emotions {
+      height: 189px;
+      margin: auto; } }
+  @media (min-width: 960px) {
+    .input__fill--emotions {
+      padding-left: 20px;
+      height: 128px; } }
+
+.radio-check__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
+
+.radio-check__input--app + .radio-check__label--app::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: -70px;
+  cursor: pointer; }
+  @media (min-width: 660px) {
+    .radio-check__input--app + .radio-check__label--app::before {
+      left: -60px; } }
+
+.radio-check__input--app:checked + .radio-check__label--app::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-image: url("../../img/radio_small.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: -4px;
+  left: -70px;
+  cursor: pointer; }
+  @media (min-width: 660px) {
+    .radio-check__input--app:checked + .radio-check__label--app::before {
+      left: -60px; } }
+
+.radio-check__input + .radio-check__label:hover::before,
+.radio-check__input:checked + .radio-check__label:hover::after {
+  border-color: #283645; }
+
+.radio-check__input + .radio-check__label:active::before,
+.radio-check__input:checked + .radio-check__label:active::after {
+  border-color: #d22856; }
+
+.radio-check__input:disabled + .radio-check__label::before,
+.radio-check__input:disabled:checked + .radio-check__label::after {
+  border-color: #e5e5e5;
+  opacity: 0.5;
+  cursor: default; }
+
+.radio-check__input--achievements + .radio-check__label--achievements::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  cursor: pointer;
+  position: absolute;
+  left: -47px;
+  top: -3px; }
+
+.radio-check__input--achievements:checked + .radio-check__label--achievements::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  background-image: url("../../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  left: -47px;
+  top: -3px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
