@@ -65,83 +65,85 @@
           <form class="competition__form survey" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="survey__section user-name">
               <ul class="user-name__list">
-                <li class="user-name__item">
-                  <label class="user-name__label" for="surname">Фамилия:</label>
-                  <input class="user-name__fill" type="text" id="surname" name="user-surname" placeholder="Укажите фамилию *" required>
+                <li class="user-name__item input">
+                  <label class="input__label input__label--name" for="surname">Фамилия:</label>
+                  <input class="input__fill input__fill--name" type="text" id="surname" name="user-surname" placeholder="Укажите фамилию *" required>
                 </li>
-                <li class="user-name__item">
-                  <label class="user-name__label" for="name">Имя:</label>
-                  <input class="user-name__fill" type="text" id="name" name="user-name" placeholder="Введите ваше имя *" required>
+                <li class="user-name__item input">
+                  <label class="input__label input__label--name" for="name">Имя:</label>
+                  <input class="input__fill input__fill--name" type="text" id="name" name="user-name" placeholder="Введите ваше имя *" required>
                 </li>
-                <li class="user-name__item">
-                  <label class="user-name__label" for="patronym">Отчество:</label>
-                  <input class="user-name__fill" type="text" id="patronym" name="user-patronym" placeholder="Ну и отчество тоже">
+                <li class="user-name__item input">
+                  <label class="input__label input__label--name" for="patronym">Отчество:</label>
+                  <input class="input__fill input__fill--name" type="text" id="patronym" name="user-patronym" placeholder="Ну и отчество тоже">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="survey__section user-achievements">
               <legend class="survey__subtitle survey__subtitle--achievements">Ваши безбашенные достижения в путешествии</legend>
               <ul class="user-achievements__list">
-                <li class="user-achievements__option user-achievements__option--shark">
-                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="shark" id="shark-selfie" checked>
-                  <label class="user-achievements__label" for="shark-selfie">Сделал селфи с акулой</label>
+                <li class="user-achievements__option user-achievements__option--shark radio-check">
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="shark" id="shark-selfie" checked>
+                  <label class="radio-check__label radio-check__label--achievements" for="shark-selfie">Сделал селфи с акулой</label>
                 </li>
                 <li class="user-achievements__option user-achievements__option--sunburn">
-                  <input class="visually-hidden user-achievements__fill " type="checkbox" name="beach" id="sunburn" checked>
-                  <label class="user-achievements__label" for="sunburn">Обгорел на пляже</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="beach" id="sunburn" checked>
+                  <label class="radio-check__label radio-check__label--achievements" for="sunburn">Обгорел на пляже</label>
                 </li>
                 <li class="user-achievements__option user-achievements__option--norris">
-                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="norris" id="chuck-norris">
-                  <label class="user-achievements__label" for="chuck-norris">Видел Чака Норриса</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="norris" id="chuck-norris">
+                  <label class="radio-check__label radio-check__label--achievements" for="chuck-norris">Видел Чака Норриса</label>
                 </li>
                 <li class="user-achievements__option user-achievements__option--souvenir">
-                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="souvenir" id="souvenir-gifts">
-                  <label class="user-achievements__label" for="souvenir-gifts">Накупил сувениров</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="souvenir" id="souvenir-gifts">
+                  <label class="radio-check__label radio-check__label--achievements" for="souvenir-gifts">Накупил сувениров</label>
                 </li>
                 <li class="user-achievements__option user-achievements__option--tower">
-                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="tower" id="tower-holding" checked>
-                  <label class="user-achievements__label" for="tower-holding">Удержал башню</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="tower" id="tower-holding" checked>
+                  <label class="radio-check__label radio-check__label--achievements" for="tower-holding">Удержал башню</label>
                 </li>
                 <li class="user-achievements__option user-achievements__option--crush">
-                  <input class="visually-hidden user-achievements__fill" type="checkbox" name="hotel" id="hotel-crush">
-                  <label class="user-achievements__label" for="hotel-crush">Разгромил отель</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--achievements" type="checkbox" name="hotel" id="hotel-crush">
+                  <label class="radio-check__label radio-check__label--achievements" for="hotel-crush">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="survey__section user-contacts">
               <legend class="survey__subtitle survey__subtitle--contacts">Контактная информация</legend>
               <div class="user-contacts__wrapper">
-                <p class="user-contacts__item">
-                  <input class="user-contacts__fill" type="tel" id="phone" placeholder="Номер, пожалуйста">
-                  <label class="user-contacts__label" for="phone">Номер телефона</label>
+                <p class="user-contacts__item input">
+                  <input class="input__fill input__fill--contacts" type="tel" id="phone" placeholder="Номер, пожалуйста">
+                  <label class="input__label input__label--contacts " for="phone">Номер телефона</label>
                 </p>
-                <p class="user-contacts__item">
-                  <input class="user-contacts__fill" type="email" id="email" placeholder="Введите почту *">
-                  <label class="user-contacts__label" for="email">Адрес почты</label>
+                <p class="user-contacts__item input">
+                  <input class="input__fill input__fill--contacts" type="email" id="email" placeholder="Введите почту *">
+                  <label class="input__label input__label--contacts" for="email">Адрес почты</label>
                 </p>
               </div>
             </fieldset>
             <fieldset class="survey__section user-app">
               <legend class="survey__subtitle survey__subtitle--app">С каким приложением путешествовали?</legend>
               <ul class="user-app__list">
-                <li class="user-app__item">
-                  <input class=" visually-hidden user-app__option" type="radio" name="user-app" id="iOS" checked>
-                  <label  class="user-app__label" for="iOS">Pink для iOS</label>
+                <li class="user-app__item radio-check">
+                  <input class=" visually-hidden radio-check__input radio-check__input--app" type="radio" name="user-app" id="iOS" checked>
+                  <label  class="radio-check__label radio-check__label--app" for="iOS">Pink для iOS</label>
                 </li>
                 <li class="user-app__item">
-                  <input class="visually-hidden user-app__option" type="radio" name="user-app" id="Android">
-                  <label class="user-app__label" for="Android" >Pink на Android</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--app" type="radio" name="user-app" id="Android">
+                  <label class="radio-check__label radio-check__label--app" for="Android" >Pink на Android</label>
                 </li>
                 <li class="user-app__item">
-                  <input class="visually-hidden user-app__option" type="radio" name="user-app" id="Windows">
-                  <label class="user-app__label" for="Windows" >Windows Phone</label>
+                  <input class="visually-hidden radio-check__input radio-check__input--app" type="radio" name="user-app" id="Windows">
+                  <label class="radio-check__label radio-check__label--app" for="Windows" >Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="survey__section user-emotions">
               <legend class="survey__subtitle survey__subtitle--emotions">Опишите свои эмоции</legend>
-              <textarea class="user-emotions__fill" name="impressions" id="user-impressions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <label for="user-impressions" class="visually-hidden">Расскажите о своих впечатлениях</label>
+              <div class="input">
+                <textarea class="input__fill input__fill--emotions" name="impressions" id="user-impressions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <label for="emotions" class="visually-hidden user-emotions input__label">Расскажите о своих впечатлениях</label>
+              </div>
             </fieldset>
             <div class="survey__section-submit">
               <button class="survey__submit" type="submit">Отправить форму</button>

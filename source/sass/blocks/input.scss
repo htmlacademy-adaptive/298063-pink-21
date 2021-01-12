@@ -1,0 +1,100 @@
+.input {
+  width: 100%;
+}
+
+.input__label {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.input__label--name {
+  margin-top: 35px;
+  margin-left: 21px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+.input__fill {
+  width: 100%;
+  height: 62px;
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: $midnight-blue;
+    font-size: 18px;
+  }
+
+  &:hover {
+    border: 2px solid $midnight-blue;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
+.input__fill--name {
+  padding-left: 18px;
+}
+
+.input__label--contacts {
+  margin-left: 21px;
+  margin-bottom: 7px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+    margin-top: 11px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+}
+
+.input__fill--contacts {
+  height: 60px;
+  padding-left: 20px;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.input__fill--emotions {
+  height: 197px;
+  margin-top: 22px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 19px;
+
+  font-weight: 400;
+  resize: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 189px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    height: 128px;
+  }
+}

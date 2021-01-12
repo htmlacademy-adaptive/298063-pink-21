@@ -53,64 +53,6 @@
   margin-bottom: 0;
 }
 
-.user-achievements__label {
-  font-size: 18px;
-  line-height: 30px;
-  color: $midnight-blue;
-}
-
-.user-achievements__fill + .user-achievements__label::before {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: $white;
-  border: 2px solid $light-gray;
-  border-radius: 1px;
-
-  cursor: pointer;
-  position: absolute;
-  left: -47px;
-  top: -3px;
-}
-
-.user-achievements__fill:checked + .user-achievements__label::after {
-  content: "";
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: $white;
-  border: 2px solid $light-gray;
-  border-radius: 1px;
-
-  background-image: url("../../img/tick.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  position: absolute;
-  left: -47px;
-  top: -3px;
-
-  cursor: pointer;
-}
-
-.user-achievements__fill + .user-achievements__label:hover::before,
-.user-achievements__fill:checked + .user-achievements__label:hover::after {
-  border-color: $midnight-blue;
-}
-
-.user-achievements__fill + .user-achievements__label:active::before,
-.user-achievements__fill:checked + .user-achievements__label:active::after {
-  border-color: $pink;
-}
-
-.user-achievements__fill:disabled + .user-achievements__label::before,
-.user-achievements__fill:disabled + .user-achievements__label::after {
-  border-color: $light-gray;
-  opacity: 0.5;
-  cursor: default;
-}
-
 @media (min-width: $desktop-width) {
   .user-achievements__option--shark {
     order: 1;

@@ -1,0 +1,98 @@
+.radio-check__label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $midnight-blue;
+}
+
+.radio-check__input--app + .radio-check__label--app::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -4px;
+  left: -70px;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+  }
+}
+
+.radio-check__input--app:checked + .radio-check__label--app::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 50%;
+  background-image: url("../../img/radio_small.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  position: absolute;
+  top: -4px;
+  left: -70px;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: -60px;
+  }
+}
+
+.radio-check__input + .radio-check__label:hover::before,
+.radio-check__input:checked + .radio-check__label:hover::after {
+  border-color: $midnight-blue;
+}
+
+.radio-check__input + .radio-check__label:active::before,
+.radio-check__input:checked + .radio-check__label:active::after {
+  border-color: $pink;
+}
+
+.radio-check__input:disabled + .radio-check__label::before,
+.radio-check__input:disabled:checked + .radio-check__label::after {
+  border-color: $light-gray;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.radio-check__input--achievements + .radio-check__label--achievements::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+
+  cursor: pointer;
+  position: absolute;
+  left: -47px;
+  top: -3px;
+}
+
+.radio-check__input--achievements:checked + .radio-check__label--achievements::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: 1px;
+
+  background-image: url("../../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  position: absolute;
+  left: -47px;
+  top: -3px;
+
+  cursor: pointer;
+}
