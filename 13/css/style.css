@@ -906,18 +906,14 @@ a {
   border-top: 1px solid #000000; }
   @media (min-width: 960px) {
     .site-nav__item {
+      display: block;
       box-shadow: none;
       border-top: none;
-      display: block;
       min-width: auto;
       min-height: auto;
       text-transform: none;
-      padding-bottom: 20px;
-      margin-left: 79px; } }
-
-@media (min-width: 960px) {
-  .site-nav__item--active {
-    border-bottom: 2px solid #ffffff; } }
+      margin-left: 79px;
+      padding-bottom: 5px; } }
 
 .site-nav__link {
   color: #ffffff;
@@ -932,7 +928,10 @@ a {
     opacity: 0.3; }
   @media (min-width: 960px) {
     .site-nav__link {
-      padding: 0; } }
+      padding: 0;
+      padding-bottom: 19px; }
+      .site-nav__link--active {
+        border-bottom: 2px solid #ffffff; } }
 
 .img-container {
   background-color: #1d2631;
