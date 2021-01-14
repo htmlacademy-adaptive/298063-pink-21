@@ -43,4 +43,10 @@
   top: 0;
   right: 33px;
   transform: translateY(-50%);
+
+  cursor: pointer;
+
+  &:active {
+    background-color: $pink;
+  }
 }

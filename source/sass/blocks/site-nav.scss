@@ -30,21 +30,15 @@
   border-top: 1px solid $black;
 
   @media (min-width: $desktop-width) {
+    display: block;
     box-shadow: none;
     border-top: none;
-    display: block;
     min-width: auto;
     min-height: auto;
     text-transform: none;
 
-    padding-bottom: 20px;
     margin-left: 79px;
-  }
-}
-
-.site-nav__item--active {
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $white;
+    padding-bottom: 5px;
   }
 }
 
@@ -66,5 +60,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-bottom: 19px;
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }
