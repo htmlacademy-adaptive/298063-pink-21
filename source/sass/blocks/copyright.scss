@@ -17,6 +17,7 @@
   width: 56px;
   height: 40px;
   padding-left: 3px;
+  fill: $pink;
 
   @media (min-width: $tablet-width) {
     width: 42px;
@@ -25,15 +26,10 @@
   }
 }
 
-.copyright__icon path {
-  fill: $pink;
-  width: 100%;
-}
-
-.copyright:hover path {
+.copyright:hover .copyright__icon {
   fill: $midnight-blue;
 }
 
-.copyright:active path {
+.copyright:active .copyright__icon {
   opacity: 0.3;
 }
