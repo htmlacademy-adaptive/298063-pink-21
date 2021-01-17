@@ -62,7 +62,6 @@
   color: $white;
   min-height: 271px;
   margin: 0;
-  // padding-top: 66px;
 
   display: flex;
   flex-direction: column;
@@ -118,7 +117,7 @@
     width: 940px;
     height: 645px;
 
-    top: 100px;
+    top: 102px;
     left: -12%;
     transform: translateX(6%);
 
@@ -166,14 +165,15 @@
 .download__icons {
   @include list-style;
   margin-top: 30px;
-  margin-bottom: 11px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 66px;
+    margin-top: 72px;
+    margin-bottom: 21px;
   }
 }
 
@@ -196,7 +196,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    margin-top: 27px;
     padding-bottom: 43px;
   }
 }

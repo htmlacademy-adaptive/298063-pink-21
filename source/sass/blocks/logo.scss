@@ -1,0 +1,40 @@
+.logo__icon {
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.logo__icon--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__icon--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__icon--mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

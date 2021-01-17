@@ -91,41 +91,38 @@
   }
 }
 
-
-.filter-setup__item path {
-  fill: $button-gray;
-
-  @media (min-width: $tablet-width) {
-    fill: $pink;
-  }
-}
-
-.filter-setup__item:hover path {
-  fill: $button-gray;
-}
-
-.filter-setup__item:active path {
-  fill: $pink;
-}
-
-.filter-setup__item--crop path {
-  @media (max-width: $mobile-width-only) {
-    fill: $pink;
-  }
-}
-
-.filter-setup__item--crop svg {
+.filter-setup__item-icon {
   width: 44px;
   height: 44px;
+
+  fill: $button-gray;
 
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 22px;
+
+    fill: $pink;
   }
 
   @media (min-width: $desktop-width) {
     width: 44px;
     height: 44px;
+  }
+}
+
+.filter-setup__item-icon:hover {
+  fill: $midnight-blue;
+  opacity: 0.5;
+}
+
+.filter-setup__item-icon:active {
+  fill: $pink;
+  opacity: 1;
+}
+
+.filter-setup__item--crop .filter-setup__item-icon {
+  @media (max-width: $mobile-width-only) {
+    fill: $pink;
   }
 }
 
