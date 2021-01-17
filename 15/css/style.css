@@ -2231,13 +2231,10 @@ a {
       justify-content: space-between; } }
 
 .like__button {
-  width: 13px;
-  height: 12px;
+  width: auto;
   border: none;
   outline: none;
-  background-color: transparent;
-  background-image: url("../../img/icon-like.svg");
-  background-repeat: no-repeat;
+  padding: 0;
   cursor: pointer; }
   @media (min-width: 660px) {
     .like__button {
@@ -2248,7 +2245,7 @@ a {
   color: #d22856;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 16px; }
+  margin-left: 18px; }
   @media (min-width: 660px) {
     .like__amount {
       margin-right: 16px;
