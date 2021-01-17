@@ -9,14 +9,10 @@
 }
 
 .like__button {
-  width: 13px;
-  height: 12px;
-
+  width: auto;
   border: none;
   outline: none;
-  background-color: transparent;
-  background-image: url("../../img/icon-like.svg");
-  background-repeat: no-repeat;
+  padding: 0;
 
   cursor: pointer;
 
@@ -31,7 +27,7 @@
   text-transform: uppercase;
 
   margin: 0;
-  margin-left: 16px;
+  margin-left: 18px;
 
   @media (min-width: $tablet-width) {
     margin-right: 16px;
