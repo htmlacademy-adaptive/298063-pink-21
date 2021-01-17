@@ -380,7 +380,7 @@
     .reviews {
       padding-top: 184px;
       padding-bottom: 32px;
-      background-image: url("../../img/icon-quotes.svg");
+      background-image: url("../../img/icon-quotes.png");
       background-repeat: no-repeat;
       background-position: center 72px; } }
 
@@ -631,7 +631,7 @@
 
 .prices-table__item-yes {
   display: block;
-  background-image: url("../../img/icon-yes.svg");
+  background-image: url("../../img/icon-yes.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 31px;
@@ -643,7 +643,7 @@
 
 .prices-table__item-no {
   display: block;
-  background-image: url("../../img/icon-no.svg");
+  background-image: url("../../img/icon-no.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 27px;
@@ -1614,13 +1614,20 @@ a {
     background-position: center center;
     position: absolute;
     top: 2px;
-    right: 2px; } }
+    right: 2px;
+    z-index: 1; } }
 
-.user-contacts__item:first-child::after {
-  background-image: url("../../img/sprite.svg#icon-phone"); }
+@media (max-width: 660px) {
+  .user-contacts__item-icon {
+    display: none; } }
 
-.user-contacts__item:last-child::after {
-  background-image: url("../../img/sprite.svg#icon-mail"); }
+@media (min-width: 660px) {
+  .user-contacts__item-icon {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    z-index: 5; } }
 
 .user-app {
   background-color: #f2f2f2; }
