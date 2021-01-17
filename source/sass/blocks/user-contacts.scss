@@ -71,13 +71,30 @@
     position: absolute;
     top: 2px;
     right: 2px;
+
+    z-index: 1;
   }
 }
 
-.user-contacts__item:first-child::after {
-  background-image: url("../../img/sprite.svg#icon-phone");
+.user-contacts__item-icon {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    z-index: 5;
+  }
 }
 
-.user-contacts__item:last-child::after {
-  background-image: url("../../img/sprite.svg#icon-mail");
-}
+// .user-contacts__item:first-child::after {
+//   background-image: url("../img/sprite.svg#icon-phone");
+// }
+
+// .user-contacts__item:last-child::after {
+//   background-image: url("../img/sprite.svg#icon-mail");
+// }
