@@ -75,9 +75,9 @@
 }
 
 .user-contacts__item:first-child::after {
-  background-image: url("../../img/icon_phone.svg");
+  background-image: url("../../img/sprite.svg#icon-phone");
 }
 
 .user-contacts__item:last-child::after {
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../../img/sprite.svg#icon-mail");
 }
