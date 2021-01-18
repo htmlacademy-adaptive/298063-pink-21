@@ -15,7 +15,7 @@ const sync = require("browser-sync").create();
 // Styles
 
 const styles = () => {
-  return gulp.src('source/sass/style.scss')
+  return gulp.src("source/sass/style.scss")
   .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
@@ -32,6 +32,15 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+const stylesMap = () => {
+  return gulp.src("build/css/style.min.css")
+  .pipe(rename("style.min.css.map"))
+  .pipe(gulp.dest("build/css"))
+}
+
+exports.stylesMap = stylesMap;
+
 
 // HTML
 
@@ -154,6 +163,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles, html, sprite, copy, createWebp
   ),
+  stylesMap,
   gulp.series(
   server, watcher
   )
