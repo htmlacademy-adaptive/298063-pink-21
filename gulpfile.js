@@ -17,31 +17,42 @@ const sync = require("browser-sync").create();
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-  .pipe(plumber())
-  .pipe(sourcemap.init())
-  .pipe(sass())
-  .pipe(rename("style.css"))
-  .pipe(gulp.dest("build/css"))
-  .pipe(postcss([
-    autoprefixer(),
-    csso()
-  ]))
-  .pipe(sourcemap.write("."))
-  .pipe(rename("style.min.css"))
-  .pipe(gulp.dest("build/css"))
-  .pipe(sync.stream());
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
+
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
 }
 
 exports.styles = styles;
 
-const stylesMap = () => {
-  return gulp.src("build/css/style.min.css")
-  .pipe(rename("style.min.css.map"))
-  .pipe(gulp.dest("build/css"))
+const stylesProd = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
+
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
 }
 
-exports.stylesMap = stylesMap;
-
+exports.stylesProd = stylesProd;
 
 // HTML
 
@@ -152,7 +163,7 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   gulp.parallel(
-    styles, html, copy, scripts, sprite, images, createWebp
+    stylesProd, html, copy, scripts, sprite, images, createWebp
   ),
 );
 
@@ -165,7 +176,6 @@ exports.default = gulp.series(
   gulp.parallel(
     styles, html, scripts, sprite, copy, createWebp
   ),
-  stylesMap,
   gulp.series(
   server, watcher
   )
