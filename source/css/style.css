@@ -2220,6 +2220,13 @@ a {
   .main-nav--opened .main-nav__container {
     background-color: #283645; } }
 
+.main-nav--nojs {
+  position: static; }
+
+@media (min-width: 660px) {
+  .main-nav--nojs .main-nav__container {
+    height: auto; } }
+
 .like {
   display: flex;
   justify-content: start;

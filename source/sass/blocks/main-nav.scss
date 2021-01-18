@@ -145,3 +145,13 @@
     background-color: $midnight-blue;
   }
 }
+
+.main-nav--nojs {
+  position: static;
+}
+
+.main-nav--nojs .main-nav__container {
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+}
