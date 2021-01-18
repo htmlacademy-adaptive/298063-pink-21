@@ -40,6 +40,10 @@
   outline: none;
   cursor: pointer;
 
+  &:focus {
+    outline: 2px solid $white;
+  }
+
   @media (min-width: $tablet-width) {
     top: 45px;
   }

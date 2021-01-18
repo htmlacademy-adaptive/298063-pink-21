@@ -1424,6 +1424,8 @@ a {
     border-color: #1c9b5e; }
   .survey__submit:active {
     color: rgba(255, 255, 255, 0.3); }
+  .survey__submit:focus {
+    outline: 2px solid #000000; }
   @media (min-width: 660px) {
     .survey__submit {
       width: 300px; } }
@@ -2136,6 +2138,8 @@ a {
   border: none;
   outline: none;
   cursor: pointer; }
+  .main-nav__toggle:focus {
+    outline: 2px solid #ffffff; }
   @media (min-width: 660px) {
     .main-nav__toggle {
       top: 45px; } }
@@ -2639,6 +2643,10 @@ a {
 .radio-check__input + .radio-check__label:active::before,
 .radio-check__input:checked + .radio-check__label:active::after {
   border-color: #d22856; }
+
+.radio-check__input:focus + .radio-check__label,
+.radio-check__input:checked:focus + .radio-check__label {
+  outline: 1px solid #d22856; }
 
 .radio-check__input:disabled + .radio-check__label::before,
 .radio-check__input:disabled:checked + .radio-check__label::after {
