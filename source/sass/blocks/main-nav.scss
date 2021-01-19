@@ -40,6 +40,10 @@
   outline: none;
   cursor: pointer;
 
+  &:focus {
+    outline: 2px solid $white;
+  }
+
   @media (min-width: $tablet-width) {
     top: 45px;
   }
@@ -143,5 +147,15 @@
 .main-nav--opened .main-nav__container {
   @media (min-width: $tablet-width) {
     background-color: $midnight-blue;
+  }
+}
+
+.main-nav--nojs {
+  position: static;
+}
+
+.main-nav--nojs .main-nav__container {
+  @media (min-width: $tablet-width) {
+    height: auto;
   }
 }

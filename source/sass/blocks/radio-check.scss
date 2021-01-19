@@ -55,6 +55,11 @@
   border-color: $pink;
 }
 
+.radio-check__input:focus + .radio-check__label,
+.radio-check__input:checked:focus + .radio-check__label {
+  outline: 1px solid $pink;
+}
+
 .radio-check__input:disabled + .radio-check__label::before,
 .radio-check__input:disabled:checked + .radio-check__label::after {
   border-color: $light-gray;
