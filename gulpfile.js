@@ -77,7 +77,7 @@ exports.scripts = scripts;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/*.{jpg,png}")
+  return gulp.src("source/img/*.{jpg,png,svg}")
   .pipe(imagemin([
     imagemin.mozjpeg({progressive: true}),
     imagemin.optipng({optimizationLevel: 3}),
@@ -174,7 +174,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   gulp.parallel(
-    styles, html, scripts, sprite, copy, createWebp
+    styles, html, scripts, sprite, copy, images, createWebp
   ),
   gulp.series(
   server, watcher
