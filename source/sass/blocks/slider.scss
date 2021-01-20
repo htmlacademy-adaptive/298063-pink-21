@@ -11,6 +11,10 @@
   margin-top: 31px;
   padding-left: 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -82,9 +86,9 @@
 }
 
 .slider__button--previous {
-  left: -8px;
+  left: 0;
 }
 
 .slider__button--next {
-  right: 8px;
+  right: 0;
 }
