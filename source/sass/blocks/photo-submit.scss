@@ -51,7 +51,7 @@
   }
 
   &:active {
-    color: lighten($pink, 30%);
+    opacity: 0.3;
   }
 
   @media (min-width: $desktop-width) {
