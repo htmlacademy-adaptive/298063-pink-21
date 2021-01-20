@@ -145,6 +145,8 @@
     width: 186px;
     height: 382px;
     margin-right: -6px;
+
+    position: relative;
   }
 }
 
@@ -182,8 +184,6 @@
   width: 280px;
   margin-bottom: 29px;
 
-  // position: relative;
-
   @media (min-width: $tablet-width) {
     width: 310px;
     margin-bottom: 30px;
@@ -201,7 +201,23 @@
     padding-top: 56px;
 
     background-color: $gray;
+    position: relative;
     z-index: 10;
+  }
+}
+
+.advantages__item::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../../img/shadow.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 17px;
+
+    position: absolute;
+    top: -17px;
+    right: -27px;
+    opacity: 0.7;
   }
 }
 
