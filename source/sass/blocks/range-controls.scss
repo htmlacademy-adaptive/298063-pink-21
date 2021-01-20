@@ -49,4 +49,8 @@
   &:active {
     background-color: $pink;
   }
+
+  &:focus {
+    outline: auto;
+  }
 }

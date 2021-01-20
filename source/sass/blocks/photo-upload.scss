@@ -8,6 +8,10 @@
 
   padding-bottom: 43px;
 
+  &:focus {
+    outline: 1px solid $midnight-blue;
+  }
+
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 400px;

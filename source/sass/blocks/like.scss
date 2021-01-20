@@ -16,6 +16,10 @@
 
   cursor: pointer;
 
+  &:focus {
+    outline: 1px solid $pink;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
   }
