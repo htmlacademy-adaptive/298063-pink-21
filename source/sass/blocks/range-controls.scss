@@ -41,12 +41,47 @@
 
   position: absolute;
   top: 0;
-  right: 33px;
+  right: 27px;
   transform: translateY(-50%);
 
   cursor: pointer;
 
   &:active {
     background-color: $pink;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+}
+
+.range-controls--active .range-controls__toggle {
+  @media (min-width: $tablet-width) {
+    right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 69px;
+  }
+}
+
+.range-controls__toggle--fill {
+  @media (min-width: $tablet-width) {
+    left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: auto;
+    right: 27px;
+  }
+}
+
+.range-controls__toggle--contrast {
+  @media (min-width: $tablet-width) {
+    right: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 114px;
   }
 }

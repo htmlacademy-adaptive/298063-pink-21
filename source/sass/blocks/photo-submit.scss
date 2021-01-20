@@ -27,6 +27,10 @@
   cursor: pointer;
   outline: none;
 
+  &:focus {
+    outline: auto;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     width: 260px;
@@ -47,7 +51,7 @@
   }
 
   &:active {
-    color: lighten($pink, 30%);
+    opacity: 0.3;
   }
 
   @media (min-width: $desktop-width) {
