@@ -6,8 +6,6 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  padding-bottom: 43px;
-
   position: relative;
 
   &:focus {
@@ -37,11 +35,16 @@
 
 .photo-upload__label {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 280px;
+  height: 375px;
 
   position: absolute;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .photo-upload__input:focus + .photo-upload__label {
