@@ -1,13 +1,9 @@
 
-// Не отображается на мобилках
-
 @media (max-width: $mobile-width-only) {
   .impact {
     display: none;
   }
 }
-
-// На планшете и десктопе
 
 .impact {
   background-color: $white;

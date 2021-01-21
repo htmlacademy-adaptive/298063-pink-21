@@ -29,6 +29,7 @@
 
   &:focus {
     outline: auto;
+    outline-offset: 2px;
   }
 
   @media (min-width: $tablet-width) {

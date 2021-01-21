@@ -152,6 +152,20 @@
 
 .main-nav--nojs {
   position: static;
+  background-color: $midnight-blue;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $header-transparent-color;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
 }
 
 .main-nav--nojs .main-nav__container {
